@@ -10,7 +10,7 @@ um projeto de extensão. Vocês aplicariam seus conhecimentos em desenvolvimento
 
 ## 🚀 Começando é mais sobre o projeto
 
-Esse readme e um template...
+Esse readme e um template... Criador do template - [Lohhans](https://github.com/lohhans)
 
 ### 📋 Pré-requisitos
 
