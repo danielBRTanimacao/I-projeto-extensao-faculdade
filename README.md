@@ -17,7 +17,7 @@ Esse readme e um template... Criador do template - [Lohhans](https://github.com/
 O você precisa para instalar?
 
 ```
-Dar exemplos
+Python 3 ou superior
 ```
 
 ### 🔧 Instalação
@@ -25,7 +25,10 @@ Dar exemplos
 Como instalar e executar
 
 ```
-Dar exemplos
+python -m venv venv
+venv/bin/activate ~no mac ou Unix
+venv/Scripts/Activate ~Windows
+pip install requirements.txt
 ```
 
 E repita:
