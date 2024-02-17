@@ -18,6 +18,7 @@ O você precisa para instalar?
 
 ```
 Python 3 ou superior
+Nodejs instalado
 ```
 
 ### 🔧 Instalação
@@ -29,12 +30,13 @@ python -m venv venv
 venv/bin/activate ~no mac ou Unix
 venv/Scripts/Activate ~Windows
 pip install requirements.txt
-```
+cd backend
+python manage.py runserver
 
-E repita:
-
-```
-Até finalizar
+Front end ~
+cd frontend
+npm i
+npm run dev
 ```
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
@@ -67,9 +69,8 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 Mencione as ferramentas que você usou para criar seu projeto
 
--   [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
--   [Maven](https://maven.apache.org/) - Gerente de Dependência
--   [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+-   [Django](https://www.djangoproject.com) - O framework web usado
+-   [Vite + ReactJs](https://vitejs.dev) - Outro framework usado
 
 ## 🖇️ Colaborando
 
