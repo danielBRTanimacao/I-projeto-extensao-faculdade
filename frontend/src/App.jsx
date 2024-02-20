@@ -1,7 +1,7 @@
 export default () => {
     return (
         <>
-            <h1>Vite mais React mais Django</h1>
+            <h1>Init project</h1>
         </>
     );
 };
