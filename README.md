@@ -17,7 +17,6 @@ Esse readme e um template... Criador do template - [Lohhans](https://github.com/
 O você precisa para instalar?
 
 ```
-Python 3 ou superior
 Nodejs instalado
 ```
 
@@ -26,14 +25,6 @@ Nodejs instalado
 Como instalar e executar
 
 ```
-python -m venv venv
-venv/bin/activate ~no mac ou Unix
-venv/Scripts/Activate ~Windows
-pip install requirements.txt
-cd backend
-python manage.py runserver
-
-Front end ~
 cd frontend
 npm i
 npm run dev
@@ -69,8 +60,8 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 Mencione as ferramentas que você usou para criar seu projeto
 
--   [Django](https://www.djangoproject.com) - O framework web usado
--   [Vite + ReactJs](https://vitejs.dev) - Outro framework usado
+-   [Boostrap](https://getbootstrap.com) - framework usado
+-   [Vite + ReactJs](https://vitejs.dev) - framework usado
 
 ## 🖇️ Colaborando
 
@@ -92,13 +83,6 @@ Você também pode ver a lista de todos os [colaboradores](https://github.com/us
 ## 📄 Licença
 
 Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
--   Conte a outras pessoas sobre este projeto 📢;
--   Convide alguém da equipe para uma cerveja 🍺;
--   Um agradecimento publicamente 🫂;
--   etc.
 
 ---
 
