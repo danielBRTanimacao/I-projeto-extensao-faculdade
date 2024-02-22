@@ -1,7 +1,9 @@
+import HeaderPrincipal from "./components/HeaderPrincipal";
+
 export default () => {
     return (
         <>
-            <h1>Init project</h1>
+            <HeaderPrincipal />
         </>
     );
 };

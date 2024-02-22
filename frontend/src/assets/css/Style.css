@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.bg-header {
+    font-family: "Playfair Display";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 458px;
+    background-image: url(../svgs/bg-principal.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1338px) {
+    .bg-header {
+        background-position: center;
+        align-items: flex-end;
+        padding-bottom: 5rem;
+    }
+}
