@@ -8,6 +8,11 @@
     src: url(../fonts/DMSerifDisplay-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
 .bg-header,
 .bg-health,
 .bg-education {
@@ -63,4 +68,8 @@
 
 .nav-link:hover {
     border-bottom: 2px solid var(--blue-variant) !important;
+}
+
+.display-4 {
+    font-family: "Ubuntu" !important;
 }
