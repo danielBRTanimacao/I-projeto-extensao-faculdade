@@ -1,3 +1,5 @@
+import React from "react";
+
 export default () => {
     return (
         <>
@@ -5,7 +7,7 @@ export default () => {
                 <div>
                     <h1 className="display-1">Saúde</h1>
                 </div>
-                <article>components</article>
+                <article>Criar um tipo de blog aqui</article>
             </section>
         </>
     );
