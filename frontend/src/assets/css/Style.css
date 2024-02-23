@@ -9,7 +9,8 @@
 }
 
 .bg-header,
-.bg-health {
+.bg-health,
+.bg-education {
     font-family: "DMSerif";
     display: flex;
     justify-content: space-around;
@@ -25,26 +26,35 @@
     background-image: url(../svgs/bg-health.svg);
 }
 
+.bg-education {
+    background-image: url(../svgs/bg-education.svg);
+}
+
 .bg-header span,
-.bg-health span {
+.bg-health span,
+.bg-education span {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 2rem;
 }
 
 .bg-header article,
-.bg-health article {
+.bg-health article,
+.bg-education article {
     margin: 15px;
 }
 
 .bg-header p,
-.bg-health p {
+.bg-health p,
+.bg-education p {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 1338px) {
-    .bg-header {
+    .bg-header,
+    .bg-health,
+    .bg-education {
         background-position: center;
         align-items: flex-end;
         padding-bottom: 5rem;

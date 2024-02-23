@@ -1,32 +1,50 @@
 import React from "react";
 import { useState } from "react";
 
+import Education from "./pages/Education";
 import Health from "./pages/Health";
 import About from "./pages/About";
 
 export default () => {
+    // coleta e renderiza a pagina clicada
     const [renderAreaClicked, setRenderAreaClicked] = useState(<Health />);
+    // formata o texto de cada pagina
     const [textArea, setTextArea] = useState(
         "É importante cuidar da sua saúde para que possa viver uma vida longa e feliz..."
     );
 
+    // deixa a funçãod e coletar menor
+    const lightRender = (removeClass, classLoad, text, areaLoad) => {
+        let sceneChange = document.querySelector("header#change");
+        sceneChange.classList.remove(removeClass[0], removeClass[1]);
+        sceneChange.classList.add(classLoad);
+        setTextArea(text);
+        setRenderAreaClicked(areaLoad);
+    };
+
+    // funcão recebe a area clicada e a carrega
     const changeAreaRender = (e) => {
         if (e == "Sobre-area") {
-            let sceneChange = document.querySelector("header#change");
-            sceneChange.classList.remove("bg-health");
-            sceneChange.classList.add("bg-header");
-            setRenderAreaClicked(<About />);
-            setTextArea(
-                "Agora que tal saber mais um pouco sobre o Movimento Cursilhista de MCC?"
+            lightRender(
+                ["bg-health", "bg-education"],
+                "bg-header",
+                "Agora que tal saber mais um pouco sobre o Movimento Cursilhista o MCC?",
+                <About />
             );
         } else if (e == "Saúde-area") {
-            let sceneChange = document.querySelector("header#change");
-            sceneChange.classList.remove("bg-header");
-            sceneChange.classList.add("bg-health");
-            setTextArea(
-                "É importante cuidar da sua saúde para que possa viver uma vida longa e feliz..."
+            lightRender(
+                ["bg-header", "bg-education"],
+                "bg-health",
+                "É importante cuidar da sua saúde para que possa viver uma vida longa e feliz...",
+                <Health />
             );
-            setRenderAreaClicked(<Health />);
+        } else {
+            lightRender(
+                ["bg-header", "bg-health"],
+                "bg-education",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, repellat facere?",
+                <Education />
+            );
         }
     };
 
