@@ -8,7 +8,8 @@
     src: url(../fonts/DMSerifDisplay-Regular.ttf);
 }
 
-.bg-header {
+.bg-header,
+.bg-health {
     font-family: "DMSerif";
     display: flex;
     justify-content: space-around;
@@ -21,42 +22,22 @@
 }
 
 .bg-health {
-    font-family: "DMSerif";
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 458px;
     background-image: url(../svgs/bg-health.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.bg-header span {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-}
-
-.bg-header article {
-    margin: 15px;
-}
-
-.bg-header p {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
+.bg-header span,
 .bg-health span {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 2rem;
 }
 
+.bg-header article,
 .bg-health article {
     margin: 15px;
 }
 
+.bg-header p,
 .bg-health p {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;

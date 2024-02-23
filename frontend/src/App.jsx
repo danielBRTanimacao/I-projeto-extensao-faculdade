@@ -17,7 +17,7 @@ export default () => {
             sceneChange.classList.add("bg-header");
             setRenderAreaClicked(<About />);
             setTextArea(
-                "Agora que tal saber mais um pouco sobre o cursilho MCC?"
+                "Agora que tal saber mais um pouco sobre o Movimento Cursilhista de MCC?"
             );
         } else if (e == "Saúde-area") {
             let sceneChange = document.querySelector("header#change");
