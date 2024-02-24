@@ -90,13 +90,10 @@
 }
 
 .calc-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
-.config-space div article h5 {
+.config-space div article {
     padding: 10px 0;
 }
 

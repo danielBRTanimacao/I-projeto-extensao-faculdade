@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 
+import Pilar from "../assets/imgs/pilar.jpg";
+
 export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
     const [nameArticle, setNameArticle] = useState("Lorem ipsum Dolor");
+
+    const CalculateImc = () => {
+        let kilos = 101;
+        let cm = 185;
+        let calculo = kilos / cm ** 2;
+        console.log(calculo);
+    };
 
     return (
         <>
@@ -10,12 +19,12 @@ export default () => {
                 <div className="p-4 p-md-5 mb-4 rounded row shadow-lg">
                     <div className="col-lg-6 px-0">
                         <h1 className="display-4 fw-bold text-success">
-                            Lorem ipsum dolor sit amet.
+                            Você sabe a importancia de preservar sua saúde?
                         </h1>
                         <p className="lead my-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ex dolore nulla rem adipisci iure ut totam
-                            itaque corporis fuga voluptatem!
+                            Por que você deveria cuidar mais da sua saúde? Onde
+                            e como posso cuidar da minha saúde, tudo isso e
+                            muito mais aqui nessa pagina!
                         </p>
                     </div>
                     <div className="col-lg-6">
@@ -31,55 +40,132 @@ export default () => {
                     <div className="col-md-9 config-space">
                         <div>
                             <h1 className="display-5 text-success">
-                                Lorem ipsum dolor sit amet.
+                                Saúde: o que é e como cuidar dela
                             </h1>
                         </div>
                         <div>
+                            <aside>
+                                Cuidar da saúde é um processo contínuo. É
+                                importante fazer escolhas saudáveis todos os
+                                dias, e procurar ajuda médica se necessário. Ao
+                                cuidar da sua saúde, você está investindo no seu
+                                bem-estar físico e mental, e está contribuindo
+                                para uma vida mais longa e feliz.
+                            </aside>
+                            <article className="row pt-5">
+                                <div className="col-md-6">
+                                    <h3 className="text-success">
+                                        Pilares da saúde
+                                    </h3>
+                                    <p>
+                                        A saúde é um estado de completo
+                                        bem-estar físico, mental e social, e não
+                                        apenas a ausência de doença ou
+                                        enfermidade. É um direito fundamental de
+                                        todos os seres humanos, e é essencial
+                                        para o desenvolvimento pessoal e social.
+                                        Existem muitos fatores que contribuem
+                                        para a saúde, incluindo a alimentação, o
+                                        exercício físico, o sono, o estresse, o
+                                        ambiente e os relacionamentos sociais. É
+                                        importante cuidar da saúde de forma
+                                        holística, levando em consideração todos
+                                        esses fatores.
+                                    </p>
+                                </div>
+                                <div className="col-md-6 bg-secondary-subtle rounded p-3">
+                                    <img
+                                        className="img-fluid rounded"
+                                        src={Pilar}
+                                        alt="pilar-img"
+                                    />
+                                </div>
+                            </article>
+                            <aside className="row">
+                                <article className="col-md-6">
+                                    <h3 className="text-success">
+                                        Alimentação
+                                    </h3>
+                                    <div>
+                                        A alimentação é um dos pilares da saúde.
+                                        Uma dieta saudável deve ser rica em
+                                        frutas, vegetais, legumes e grãos
+                                        integrais. Também é importante limitar o
+                                        consumo de alimentos processados,
+                                        açúcares e gorduras saturadas.
+                                    </div>
+                                </article>
+                                <article className="col-md-6">
+                                    <h3 className="text-success">
+                                        Exercicio fisico
+                                    </h3>
+                                    <p>
+                                        O exercício físico é outro pilar da
+                                        saúde. A atividade física regular ajuda
+                                        a manter o peso saudável, fortalece os
+                                        músculos e os ossos, melhora a
+                                        circulação sanguínea e a função
+                                        pulmonar, e reduz o risco de doenças
+                                        crônicas, como diabetes, hipertensão e
+                                        câncer.
+                                    </p>
+                                </article>
+                            </aside>
                             <article>
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsum esse velit non, a hic,
-                                sequi reprehenderit incidunt magni consectetur
-                                delectus perferendis optio omnis vitae
-                                necessitatibus? Voluptate similique officiis
-                                consectetur architecto?
+                                <h3 className="text-success">O sono</h3>
+                                <p>
+                                    O sono é um terceiro pilar da saúde. Um
+                                    adulto precisa de cerca de 7-8 horas de sono
+                                    por noite. O sono é importante para a saúde
+                                    mental e física, e ajuda a melhorar o humor,
+                                    a concentração e a memória. O estresse é um
+                                    quarto pilar da saúde.
+                                </p>
                             </article>
                             <article>
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsum esse velit non, a hic,
-                                sequi reprehenderit incidunt magni consectetur
-                                delectus perferendis optio omnis vitae
-                                necessitatibus? Voluptate similique officiis
-                                consectetur architecto?
+                                <h3 className="text-success">Estresse</h3>
+                                <p>
+                                    O estresse é uma reação natural do corpo a
+                                    situações desafiadoras. No entanto, o
+                                    estresse crônico pode prejudicar a saúde
+                                    física e mental. É importante encontrar
+                                    formas de lidar com o estresse de forma
+                                    saudável, como exercícios, meditação ou
+                                    yoga.
+                                </p>
                             </article>
                             <article>
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsum esse velit non, a hic,
-                                sequi reprehenderit incidunt magni consectetur
-                                delectus perferendis optio omnis vitae
-                                necessitatibus? Voluptate similique officiis
-                                consectetur architecto?
-                                <h5>Lorem ipsum dolor sit amet.</h5>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsum esse velit non, a hic,
-                                sequi reprehenderit incidunt magni consectetur
-                                delectus perferendis optio omnis vitae
-                                necessitatibus? Voluptate similique officiis
-                                consectetur architecto? Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit. Ipsum esse
-                                velit non, a hic, sequi reprehenderit incidunt
-                                magni consectetur delectus perferendis optio
-                                omnis vitae necessitatibus? Voluptate similique
-                                officiis consectetur architecto?
+                                <h3 className="text-success">Ambiente</h3>
+                                <p>
+                                    O ambiente é um quinto pilar da saúde. O
+                                    ambiente em que vivemos pode ter um impacto
+                                    significativo na nossa saúde. É importante
+                                    viver em um ambiente limpo e saudável, com
+                                    acesso a alimentos frescos e água potável.
+                                </p>
+                            </article>
+                            <article>
+                                <h3 className="text-success">
+                                    Relacionamentos sociais
+                                </h3>
+                                <p>
+                                    Os relacionamentos sociais são um sexto
+                                    pilar da saúde. Os relacionamentos sociais
+                                    são importantes para a nossa saúde mental e
+                                    física. Eles nos ajudam a sentir-nos
+                                    conectados e apoiados, e podem nos ajudar a
+                                    lidar com o estresse e a ansiedade.
+                                </p>
                             </article>
                         </div>
-                        <aside>Lorem ipsum dolor sit amet.</aside>
+                        <a href="https://g1.globo.com/saude/">
+                            Saiba mais em outros sites...
+                        </a>
+                        <hr />
                     </div>
                     <article className="col-md-3">
-                        <ol className="p-3 list-unstyled border border-success shadow rounded">
-                            <h3 className="text-primary">Alguns artigos</h3>
+                        <ol className="p-3 list-unstyled border border-success-subtle shadow rounded">
+                            <h3 className="text-success">Alguns artigos</h3>
                             <hr />
                             <li>
                                 <a
@@ -151,7 +237,96 @@ export default () => {
                 </section>
 
                 <section className="calc-area">
-                    <div>Calculos</div>
+                    <h1 className="display-4 fw-bold text-success">
+                        Agora vamos fazer calculos simples como o indice de
+                        massa corporea(IMC)
+                    </h1>
+                    <aside className="row pt-4">
+                        <small className="col-md-5">
+                            IMC é a sigla para Índice de Massa Corpórea,
+                            parâmetro adotado pela Organização Mundial de Saúde
+                            para calcular o peso ideal de cada pessoa. O índice
+                            é calculado da seguinte maneira: divide-se o peso do
+                            paciente pela sua altura elevada ao quadrado. Diz-se
+                            que o indivíduo tem peso normal quando o resultado
+                            do IMC está entre 18,5 e 24,9. Quer descobrir seu
+                            IMC? Insira seu peso e sua altura nos campos e
+                            compare com os índices da tabela.
+                        </small>
+                        <form className="col-md-7" action="#result">
+                            <div className="pb-4">
+                                <label className="form-label" htmlFor="altura">
+                                    Altura
+                                </label>
+                                <input
+                                    className="form-control"
+                                    type="number"
+                                    name="altura"
+                                    placeholder="Altura cm:"
+                                    required
+                                />
+                                <label className="form-label" htmlFor="peso">
+                                    Peso
+                                </label>
+                                <input
+                                    className="form-control"
+                                    type="number"
+                                    name="peso"
+                                    placeholder="Peso Kg:"
+                                    required
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                className="btn btn-success"
+                                onClick={CalculateImc}
+                            >
+                                Calcular
+                            </button>
+                        </form>
+                        <div className="col-md-6 pt-5">
+                            <table>
+                                <tr>
+                                    <th>IMC</th>
+                                    <th>Classificação</th>
+                                    <th>Obesidade</th>
+                                </tr>
+                                <tr>
+                                    <td>menor que 18,5</td>
+                                    <td>Baixo Peso</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 a 24.9</td>
+                                    <td>Normal</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>maior que 25</td>
+                                    <td>Sobrepeso</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>30 a 34.9</td>
+                                    <td>Obesidade</td>
+                                    <td>I</td>
+                                </tr>
+                                <tr>
+                                    <td>35 a 39.9</td>
+                                    <td>Obesidade</td>
+                                    <td>II</td>
+                                </tr>
+                                <tr>
+                                    <td>Mais que 40</td>
+                                    <td>Obesidade</td>
+                                    <td>III</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div className="col-md-6 pt-5" id="result">
+                            Resultado
+                        </div>
+                    </aside>
                 </section>
             </main>
         </>
