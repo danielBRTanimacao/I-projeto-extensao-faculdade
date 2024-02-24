@@ -1,6 +1,7 @@
 :root {
     --blue-variant: rgb(25, 25, 135);
     --orange-base: #ef7f1a;
+    --green-base: rgb(19, 85, 60);
     --grey-variant: #888;
 }
 
@@ -95,7 +96,20 @@
     height: 100vh;
 }
 
+.config-space div article h5 {
+    padding: 10px 0;
+}
+
 ol a {
+    font-family: "Ubuntu";
     text-decoration: none;
-    color: black;
+    color: green;
+}
+
+ol a:hover {
+    color: var(--green-base);
+}
+
+ol li {
+    margin: 5px;
 }

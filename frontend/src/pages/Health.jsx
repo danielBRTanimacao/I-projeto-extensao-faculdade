@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default () => {
+    const [linkArticle, setLinkArticle] = useState("/");
+    const [nameArticle, setNameArticle] = useState("Lorem ipsum Dolor");
+
     return (
         <>
             <main className="container">
@@ -25,9 +28,11 @@ export default () => {
                 </div>
 
                 <section className="row pt-5">
-                    <div className="col-md-9">
+                    <div className="col-md-9 config-space">
                         <div>
-                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <h1 className="display-5 text-success">
+                                Lorem ipsum dolor sit amet.
+                            </h1>
                         </div>
                         <div>
                             <article>
@@ -72,31 +77,73 @@ export default () => {
                         </div>
                         <aside>Lorem ipsum dolor sit amet.</aside>
                     </div>
-                    <article className="col-md-3 border rounded">
-                        <ol className="m-3 list-unstyled">
-                            <h3>Alguns artigos</h3>
+                    <article className="col-md-3">
+                        <ol className="p-3 list-unstyled border border-success shadow rounded">
+                            <h3 className="text-primary">Alguns artigos</h3>
+                            <hr />
                             <li>
-                                <a href="">
-                                    <span>Artigo 1</span>
-                                    <img src="" alt="artigo-img" />
+                                <a
+                                    href={linkArticle}
+                                    className="d-flex justify-content-evenly align-items-center"
+                                >
+                                    <span>{nameArticle}</span>
+                                    <img
+                                        className="img-fluid rounded"
+                                        src="https://source.unsplash.com/random/75x75/?health"
+                                        alt="artigo-img"
+                                    />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="" alt="artigo-img" />
-                                    <p>Artigo 02</p>
+                                <a
+                                    href={linkArticle}
+                                    className="d-flex justify-content-evenly align-items-center"
+                                >
+                                    <span>{nameArticle}</span>
+                                    <img
+                                        className="img-fluid rounded"
+                                        src="https://source.unsplash.com/random/75x75/?people"
+                                        alt="artigo-img"
+                                    />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="" alt="artigo-img" />
-                                    <p>Artigo 03</p>
+                                <a
+                                    href={linkArticle}
+                                    className="d-flex justify-content-evenly align-items-center"
+                                >
+                                    <span>{nameArticle}</span>
+                                    <img
+                                        className="img-fluid rounded"
+                                        src="https://source.unsplash.com/random/75x75/?day"
+                                        alt="artigo-img"
+                                    />
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="" alt="artigo-img" />
-                                    <p>Artigo 04</p>
+                                <a
+                                    href={linkArticle}
+                                    className="d-flex justify-content-evenly align-items-center"
+                                >
+                                    <span>{nameArticle}</span>
+                                    <img
+                                        className="img-fluid rounded"
+                                        src="https://source.unsplash.com/random/75x75/?save"
+                                        alt="artigo-img"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href={linkArticle}
+                                    className="d-flex justify-content-evenly align-items-center"
+                                >
+                                    <span>{nameArticle}</span>
+                                    <img
+                                        className="img-fluid rounded"
+                                        src="https://source.unsplash.com/random/75x75/?healths"
+                                        alt="artigo-img"
+                                    />
                                 </a>
                             </li>
                         </ol>
