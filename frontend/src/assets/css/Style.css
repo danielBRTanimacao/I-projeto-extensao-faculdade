@@ -1,6 +1,20 @@
 :root {
     --blue-variant: rgb(25, 25, 135);
     --orange-base: #ef7f1a;
+    --grey-variant: #888;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--grey-variant);
 }
 
 @font-face {
@@ -72,4 +86,16 @@
 
 .display-4 {
     font-family: "Ubuntu" !important;
+}
+
+.calc-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ol a {
+    text-decoration: none;
+    color: black;
 }

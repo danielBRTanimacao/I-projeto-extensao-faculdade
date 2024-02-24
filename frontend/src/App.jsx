@@ -4,6 +4,7 @@ import { useState } from "react";
 import Education from "./pages/Education";
 import Health from "./pages/Health";
 import About from "./pages/About";
+import Footer from "./components/Footer";
 
 export default () => {
     // coleta e renderiza a pagina clicada
@@ -94,6 +95,7 @@ export default () => {
                 </ul>
             </nav>
             {renderAreaClicked}
+            <Footer />
         </>
     );
 };
