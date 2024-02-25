@@ -5,12 +5,13 @@ import Pilar from "../assets/imgs/pilar.jpg";
 export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
     const [nameArticle, setNameArticle] = useState("Lorem ipsum Dolor");
+    const [redultImc, setResultImc] = useState();
 
     const CalculateImc = () => {
         let kilos = 101;
-        let cm = 185;
-        let calculo = kilos / cm ** 2;
-        console.log(calculo);
+        let metros = 1.85;
+        let calculo = kilos / metros ** 2;
+        setResultImc(calculo);
     };
 
     return (
@@ -285,46 +286,50 @@ export default () => {
                             </button>
                         </form>
                         <div className="col-md-6 pt-5">
-                            <table>
-                                <tr>
-                                    <th>IMC</th>
-                                    <th>Classificação</th>
-                                    <th>Obesidade</th>
-                                </tr>
-                                <tr>
-                                    <td>menor que 18,5</td>
-                                    <td>Baixo Peso</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>18.5 a 24.9</td>
-                                    <td>Normal</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>maior que 25</td>
-                                    <td>Sobrepeso</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr>
-                                    <td>30 a 34.9</td>
-                                    <td>Obesidade</td>
-                                    <td>I</td>
-                                </tr>
-                                <tr>
-                                    <td>35 a 39.9</td>
-                                    <td>Obesidade</td>
-                                    <td>II</td>
-                                </tr>
-                                <tr>
-                                    <td>Mais que 40</td>
-                                    <td>Obesidade</td>
-                                    <td>III</td>
-                                </tr>
+                            <table className="table">
+                                <thead>
+                                    <tr>
+                                        <th>IMC</th>
+                                        <th>Classificação</th>
+                                        <th>Obesidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>menor que 18,5</td>
+                                        <td>Baixo Peso</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.5 a 24.9</td>
+                                        <td>Normal</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>maior que 25</td>
+                                        <td>Sobrepeso</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 a 34.9</td>
+                                        <td>Obesidade</td>
+                                        <td>I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35 a 39.9</td>
+                                        <td>Obesidade</td>
+                                        <td>II</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mais que 40</td>
+                                        <td>Obesidade</td>
+                                        <td>III</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                         <div className="col-md-6 pt-5" id="result">
-                            Resultado
+                            {redultImc}
                         </div>
                     </aside>
                 </section>
