@@ -275,6 +275,7 @@ export default () => {
                                     className="form-control"
                                     type="number"
                                     name="altura"
+                                    id="altura"
                                     placeholder="Altura cm:"
                                     required
                                 />
@@ -286,6 +287,7 @@ export default () => {
                                     className="form-control"
                                     type="number"
                                     name="peso"
+                                    id="peso"
                                     placeholder="Peso Kg:"
                                     required
                                 />
