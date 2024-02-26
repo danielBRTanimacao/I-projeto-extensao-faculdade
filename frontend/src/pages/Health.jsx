@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import Pilar from "../assets/imgs/pilar.jpg";
 
 export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
     const [nameArticle, setNameArticle] = useState("Lorem ipsum Dolor");
-    const [redultImc, setResultImc] = useState();
 
-    const CalculateImc = () => {
-        let kilos = 101;
-        let metros = 1.85;
-        let calculo = kilos / metros ** 2;
-        setResultImc(calculo);
+    const fetchAllArticles = () => {
+        setLinkArticle("");
+        setNameArticle("Fetch all article");
+    };
+
+    const [redultImc, setResultImc] = useState();
+    const kgRef = useRef();
+    const mRef = useRef();
+    const calculateImc = () => {
+        let imc = kgRef.current.value / (mRef.current.value / 100) ** 2;
+        if (imc) setResultImc(imc.toFixed(1));
     };
 
     return (
@@ -25,7 +30,7 @@ export default () => {
                         <p className="lead my-3">
                             Por que você deveria cuidar mais da sua saúde? Onde
                             e como posso cuidar da minha saúde, tudo isso e
-                            muito mais aqui nessa pagina!
+                            muito mais aqui!
                         </p>
                     </div>
                     <div className="col-lg-6">
@@ -55,7 +60,7 @@ export default () => {
                             </aside>
                             <article className="row pt-5">
                                 <div className="col-md-6">
-                                    <h3 className="text-success">
+                                    <h3 className="text-success display-6">
                                         Pilares da saúde
                                     </h3>
                                     <p>
@@ -84,7 +89,7 @@ export default () => {
                             </article>
                             <aside className="row">
                                 <article className="col-md-6">
-                                    <h3 className="text-success">
+                                    <h3 className="text-success display-6">
                                         Alimentação
                                     </h3>
                                     <div>
@@ -97,7 +102,7 @@ export default () => {
                                     </div>
                                 </article>
                                 <article className="col-md-6">
-                                    <h3 className="text-success">
+                                    <h3 className="text-success display-6">
                                         Exercicio fisico
                                     </h3>
                                     <p>
@@ -113,7 +118,9 @@ export default () => {
                                 </article>
                             </aside>
                             <article>
-                                <h3 className="text-success">O sono</h3>
+                                <h3 className="text-success display-6">
+                                    O sono
+                                </h3>
                                 <p>
                                     O sono é um terceiro pilar da saúde. Um
                                     adulto precisa de cerca de 7-8 horas de sono
@@ -124,7 +131,9 @@ export default () => {
                                 </p>
                             </article>
                             <article>
-                                <h3 className="text-success">Estresse</h3>
+                                <h3 className="text-success display-6">
+                                    Estresse
+                                </h3>
                                 <p>
                                     O estresse é uma reação natural do corpo a
                                     situações desafiadoras. No entanto, o
@@ -136,7 +145,9 @@ export default () => {
                                 </p>
                             </article>
                             <article>
-                                <h3 className="text-success">Ambiente</h3>
+                                <h3 className="text-success display-6">
+                                    Ambiente
+                                </h3>
                                 <p>
                                     O ambiente é um quinto pilar da saúde. O
                                     ambiente em que vivemos pode ter um impacto
@@ -146,7 +157,7 @@ export default () => {
                                 </p>
                             </article>
                             <article>
-                                <h3 className="text-success">
+                                <h3 className="text-success display-6">
                                     Relacionamentos sociais
                                 </h3>
                                 <p>
@@ -254,12 +265,13 @@ export default () => {
                             IMC? Insira seu peso e sua altura nos campos e
                             compare com os índices da tabela.
                         </small>
-                        <form className="col-md-7" action="#result">
+                        <div className="col-md-7 py-2">
                             <div className="pb-4">
                                 <label className="form-label" htmlFor="altura">
                                     Altura
                                 </label>
                                 <input
+                                    ref={mRef}
                                     className="form-control"
                                     type="number"
                                     name="altura"
@@ -270,6 +282,7 @@ export default () => {
                                     Peso
                                 </label>
                                 <input
+                                    ref={kgRef}
                                     className="form-control"
                                     type="number"
                                     name="peso"
@@ -280,11 +293,11 @@ export default () => {
                             <button
                                 type="submit"
                                 className="btn btn-success"
-                                onClick={CalculateImc}
+                                onClick={calculateImc}
                             >
                                 Calcular
                             </button>
-                        </form>
+                        </div>
                         <div className="col-md-6 pt-5">
                             <table className="table">
                                 <thead>
@@ -328,9 +341,7 @@ export default () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="col-md-6 pt-5" id="result">
-                            {redultImc}
-                        </div>
+                        <div className="col-md-6 pt-5">{redultImc}</div>
                     </aside>
                 </section>
             </main>
