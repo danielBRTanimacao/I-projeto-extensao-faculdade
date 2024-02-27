@@ -4,10 +4,10 @@ import Pilar from "../assets/imgs/pilar.jpg";
 
 export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
-    const [nameArticle, setNameArticle] = useState("Lorem ipsum Dolor");
+    const [nameArticle, setNameArticle] = useState("Carregando...");
 
     const fetchAllArticles = () => {
-        setLinkArticle("");
+        setLinkArticle("https://github.com/danielBRTanimacao");
         setNameArticle("Fetch all article");
     };
 
@@ -16,7 +16,11 @@ export default () => {
     const mRef = useRef();
     const calculateImc = () => {
         let imc = kgRef.current.value / (mRef.current.value / 100) ** 2;
-        if (imc) setResultImc(imc.toFixed(1));
+        if (imc && imc > 0) {
+            setResultImc(imc.toFixed(1));
+        } else {
+            setResultImc("Você digitou valores negativos ou invalidos!");
+        }
     };
 
     return (
@@ -175,7 +179,7 @@ export default () => {
                         </a>
                         <hr />
                     </div>
-                    <article className="col-md-3">
+                    <article className="col-md-3" onLoad={fetchAllArticles}>
                         <ol className="p-3 list-unstyled border border-success-subtle shadow rounded">
                             <h3 className="text-success">Alguns artigos</h3>
                             <hr />
