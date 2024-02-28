@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 
+import Socrates from "../assets/svgs/socrates.svg";
 import Pilar from "../assets/imgs/pilar.jpg";
 
 export default () => {
@@ -385,32 +386,31 @@ export default () => {
                         </div>
                     </aside>
                 </section>
-                <section className="my-5 area-exerci">
+                <section className="my-5 pt-2 text-center">
                     <h1 className="display-5 fw-bold text-success">
                         Locais praticos para a execução de exercicios fisicos
                     </h1>
-                    <div className="row pt-2">
-                        <span className="col-md-7">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Ipsa ea nostrum quidem, sed distinctio animi
-                            voluptate corporis beatae dolorum nesciunt accusamus
-                            soluta culpa reiciendis ipsam maxime commodi ullam
-                            perferendis voluptas.
-                        </span>
-                        <figure className="text-center col-md-4">
-                            <blockquote className="blockquote">
-                                <p>
-                                    A well-known quote, contained in a
-                                    blockquote element.
-                                </p>
-                            </blockquote>
-                            <figcaption className="blockquote-footer">
-                                Someone famous in{" "}
-                                <cite title="Source Title">Source Title</cite>
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <img
+                        src={Socrates}
+                        width={350}
+                        alt="socrates-img"
+                        className="img-fluid rounded-circle shadow-lg pt-2"
+                    />
+                    <figure className="text-center py-2">
+                        <blockquote className="blockquote">
+                            <p>
+                                ...Que desgraça é para o homem envelhecer sem
+                                nunca ver a beleza e força que o seu corpo é
+                                capaz!
+                            </p>
+                        </blockquote>
+                        <figcaption className="blockquote-footer">
+                            Sócrates
+                            <cite title="Source Title"> Pensador</cite>
+                        </figcaption>
+                    </figure>
                 </section>
+                <section>maps</section>
             </main>
         </>
     );
