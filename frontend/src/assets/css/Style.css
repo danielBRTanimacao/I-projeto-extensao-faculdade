@@ -89,10 +89,6 @@
     font-family: "Ubuntu" !important;
 }
 
-.calc-area {
-    height: 100vh;
-}
-
 .config-space div article {
     padding: 10px 0;
 }
@@ -109,4 +105,13 @@ ol a:hover {
 
 ol li {
     margin: 5px;
+}
+
+.area-exerci {
+    padding: 1rem;
+    height: 100vh;
+    background-image: url(../imgs/halter.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }

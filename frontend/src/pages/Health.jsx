@@ -6,9 +6,20 @@ export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
     const [nameArticle, setNameArticle] = useState("Carregando...");
 
-    const fetchAllArticles = () => {
-        setLinkArticle("https://github.com/danielBRTanimacao");
-        setNameArticle("Fetch all article");
+    const fetchArticles = () => {
+        fetch("https://servicodados.ibge.gov.br/api/v3/noticias/?qtd=5").then(
+            (response) =>
+                response.json().then((resData) => {
+                    let listOfNames = [];
+                    let listOfLinks = [];
+                    for (let index = 0; index < resData.items.length; index++) {
+                        listOfNames.push(resData.items[index].titulo);
+                        listOfLinks.push(resData.items[index].link);
+                    }
+                    setNameArticle(listOfNames);
+                    setLinkArticle(listOfLinks);
+                })
+        );
     };
 
     const [redultImc, setResultImc] = useState();
@@ -17,9 +28,22 @@ export default () => {
     const calculateImc = () => {
         let imc = kgRef.current.value / (mRef.current.value / 100) ** 2;
         if (imc && imc > 0) {
-            setResultImc(imc.toFixed(1));
+            setResultImc(
+                <div>
+                    <h1 className="display-6 bg-success rounded-end text-light p-1">
+                        Seu IMC é
+                    </h1>
+                    <span className="fs-3 border-5 border-start rounded-start-2 border-success p-1">
+                        {imc.toFixed(1)}
+                    </span>
+                </div>
+            );
         } else {
-            setResultImc("Você digitou valores negativos ou invalidos!");
+            setResultImc(
+                <h1 className="display-6 text-danger">
+                    Você digitou valores negativos ou invalidos!
+                </h1>
+            );
         }
     };
 
@@ -179,29 +203,33 @@ export default () => {
                         </a>
                         <hr />
                     </div>
-                    <article className="col-md-3" onLoad={fetchAllArticles}>
+                    <article className="col-md-3" onLoad={fetchArticles}>
                         <ol className="p-3 list-unstyled border border-success-subtle shadow rounded">
                             <h3 className="text-success">Alguns artigos</h3>
                             <hr />
                             <li>
                                 <a
-                                    href={linkArticle}
+                                    href={linkArticle[0]}
                                     className="d-flex justify-content-evenly align-items-center"
                                 >
-                                    <span>{nameArticle}</span>
+                                    <span className="text-truncate">
+                                        {nameArticle[0]}
+                                    </span>
                                     <img
                                         className="img-fluid rounded"
-                                        src="https://source.unsplash.com/random/75x75/?health"
+                                        src="https://source.unsplash.com/random/75x75/?random"
                                         alt="artigo-img"
                                     />
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href={linkArticle}
+                                    href={linkArticle[1]}
                                     className="d-flex justify-content-evenly align-items-center"
                                 >
-                                    <span>{nameArticle}</span>
+                                    <span className="text-truncate">
+                                        {nameArticle[1]}
+                                    </span>
                                     <img
                                         className="img-fluid rounded"
                                         src="https://source.unsplash.com/random/75x75/?people"
@@ -211,10 +239,12 @@ export default () => {
                             </li>
                             <li>
                                 <a
-                                    href={linkArticle}
+                                    href={linkArticle[2]}
                                     className="d-flex justify-content-evenly align-items-center"
                                 >
-                                    <span>{nameArticle}</span>
+                                    <span className="text-truncate">
+                                        {nameArticle[2]}
+                                    </span>
                                     <img
                                         className="img-fluid rounded"
                                         src="https://source.unsplash.com/random/75x75/?day"
@@ -224,23 +254,27 @@ export default () => {
                             </li>
                             <li>
                                 <a
-                                    href={linkArticle}
+                                    href={linkArticle[3]}
                                     className="d-flex justify-content-evenly align-items-center"
                                 >
-                                    <span>{nameArticle}</span>
+                                    <span className="text-truncate">
+                                        {nameArticle[3]}
+                                    </span>
                                     <img
                                         className="img-fluid rounded"
-                                        src="https://source.unsplash.com/random/75x75/?save"
+                                        src="https://source.unsplash.com/random/75x75/?health"
                                         alt="artigo-img"
                                     />
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href={linkArticle}
+                                    href={linkArticle[4]}
                                     className="d-flex justify-content-evenly align-items-center"
                                 >
-                                    <span>{nameArticle}</span>
+                                    <span className="text-truncate">
+                                        {nameArticle[4]}
+                                    </span>
                                     <img
                                         className="img-fluid rounded"
                                         src="https://source.unsplash.com/random/75x75/?healths"
@@ -252,68 +286,34 @@ export default () => {
                     </article>
                 </section>
 
-                <section className="calc-area">
+                <section className="py-2">
                     <h1 className="display-4 fw-bold text-success">
                         Agora vamos fazer calculos simples como o indice de
                         massa corporea(IMC)
                     </h1>
                     <aside className="row pt-4">
-                        <small className="col-md-5">
-                            IMC é a sigla para Índice de Massa Corpórea,
-                            parâmetro adotado pela Organização Mundial de Saúde
-                            para calcular o peso ideal de cada pessoa. O índice
-                            é calculado da seguinte maneira: divide-se o peso do
-                            paciente pela sua altura elevada ao quadrado. Diz-se
-                            que o indivíduo tem peso normal quando o resultado
-                            do IMC está entre 18,5 e 24,9. Quer descobrir seu
-                            IMC? Insira seu peso e sua altura nos campos e
-                            compare com os índices da tabela.
-                        </small>
-                        <div className="col-md-7 py-2">
-                            <div className="pb-4">
-                                <label className="form-label" htmlFor="altura">
-                                    Altura
-                                </label>
-                                <input
-                                    ref={mRef}
-                                    className="form-control"
-                                    type="number"
-                                    name="altura"
-                                    id="altura"
-                                    placeholder="Altura cm:"
-                                    required
-                                />
-                                <label className="form-label" htmlFor="peso">
-                                    Peso
-                                </label>
-                                <input
-                                    ref={kgRef}
-                                    className="form-control"
-                                    type="number"
-                                    name="peso"
-                                    id="peso"
-                                    placeholder="Peso Kg:"
-                                    required
-                                />
-                            </div>
-                            <button
-                                type="submit"
-                                className="btn btn-success"
-                                onClick={calculateImc}
-                            >
-                                Calcular
-                            </button>
-                        </div>
-                        <div className="col-md-6 pt-5">
-                            <table className="table">
-                                <thead>
+                        <div className="col-md-6">
+                            <small>
+                                IMC é a sigla para Índice de Massa Corpórea,
+                                parâmetro adotado pela Organização Mundial de
+                                Saúde para calcular o peso ideal de cada pessoa.
+                                O índice é calculado da seguinte maneira:
+                                divide-se o peso do paciente pela sua altura
+                                elevada ao quadrado. Diz-se que o indivíduo tem
+                                peso normal quando o resultado do IMC está entre
+                                18,5 e 24,9. Quer descobrir seu IMC? Insira seu
+                                peso e sua altura nos campos e compare com os
+                                índices da tabela.
+                            </small>
+                            <table className="table table-striped mt-3">
+                                <thead className="table-success">
                                     <tr>
                                         <th>IMC</th>
                                         <th>Classificação</th>
                                         <th>Obesidade</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody className="table-group-divider">
                                     <tr>
                                         <td>menor que 18,5</td>
                                         <td>Baixo Peso</td>
@@ -347,8 +347,69 @@ export default () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className="col-md-6 pt-5">{redultImc}</div>
+                        <div className="col-md-6 py-2">
+                            <div className="pb-4">
+                                <label className="form-label" htmlFor="altura">
+                                    Altura
+                                </label>
+                                <input
+                                    ref={mRef}
+                                    className="form-control"
+                                    type="number"
+                                    name="altura"
+                                    id="altura"
+                                    placeholder="Altura cm:"
+                                    required
+                                />
+                                <label className="form-label" htmlFor="peso">
+                                    Peso
+                                </label>
+                                <input
+                                    ref={kgRef}
+                                    className="form-control"
+                                    type="number"
+                                    name="peso"
+                                    id="peso"
+                                    placeholder="Peso Kg:"
+                                    required
+                                />
+                                <button
+                                    type="submit"
+                                    className="btn btn-success mt-2"
+                                    onClick={calculateImc}
+                                >
+                                    Calcular
+                                </button>
+                            </div>
+                            <div>{redultImc}</div>
+                        </div>
                     </aside>
+                </section>
+                <section className="my-5 area-exerci">
+                    <h1 className="display-5 fw-bold text-success">
+                        Locais praticos para a execução de exercicios fisicos
+                    </h1>
+                    <div className="row pt-2">
+                        <span className="col-md-7">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Ipsa ea nostrum quidem, sed distinctio animi
+                            voluptate corporis beatae dolorum nesciunt accusamus
+                            soluta culpa reiciendis ipsam maxime commodi ullam
+                            perferendis voluptas.
+                        </span>
+                        <figure className="text-center col-md-4">
+                            <blockquote className="blockquote">
+                                <p>
+                                    A well-known quote, contained in a
+                                    blockquote element.
+                                </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                                Someone famous in{" "}
+                                <cite title="Source Title">Source Title</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </section>
             </main>
         </>
