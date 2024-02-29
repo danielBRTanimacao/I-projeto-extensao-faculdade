@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 
-import Socrates from "../assets/svgs/socrates.svg";
 import Pilar from "../assets/imgs/pilar.jpg";
+import Socrates from "../assets/svgs/socrates.svg";
+import Running from "../assets/svgs/running.svg";
 
 export default () => {
     const [linkArticle, setLinkArticle] = useState("/");
@@ -387,30 +388,147 @@ export default () => {
                     </aside>
                 </section>
                 <section className="my-5 pt-2 text-center">
-                    <h1 className="display-5 fw-bold text-success">
+                    <h1 className="display-5 fw-bold text-success py-3">
                         Locais praticos para a execução de exercicios fisicos
                     </h1>
-                    <img
-                        src={Socrates}
-                        width={350}
-                        alt="socrates-img"
-                        className="img-fluid rounded-circle shadow-lg pt-2"
-                    />
-                    <figure className="text-center py-2">
-                        <blockquote className="blockquote">
-                            <p>
-                                ...Que desgraça é para o homem envelhecer sem
-                                nunca ver a beleza e força que o seu corpo é
-                                capaz!
-                            </p>
-                        </blockquote>
-                        <figcaption className="blockquote-footer">
-                            Sócrates
-                            <cite title="Source Title"> Pensador</cite>
-                        </figcaption>
-                    </figure>
+                    <div className="shadow-lg rounded">
+                        <img
+                            src={Socrates}
+                            width={350}
+                            alt="socrates-img"
+                            className="img-fluid rounded-circle shadow-lg pt-2"
+                        />
+                        <figure className="text-center py-2">
+                            <blockquote className="blockquote">
+                                <p>
+                                    ...Que desgraça é para o homem envelhecer
+                                    sem nunca ver a beleza e força que o seu
+                                    corpo é capaz!
+                                </p>
+                            </blockquote>
+                            <figcaption className="blockquote-footer">
+                                Sócrates
+                                <cite title="Source Title"> Pensador</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </section>
-                <section>maps</section>
+                <section>
+                    <div className="text-success pb-3">
+                        <h3 className="display-6">Localidade iati-Pe</h3>
+                        <h4>Academias e locais de esporte publico</h4>
+                    </div>
+                    <article className="row">
+                        <div className="col-md-6">
+                            <h3>Academia açude</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.2972613809833!2d-36.84441332671213!3d-9.046600438284303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1709208678981!5m2!1spt-BR!2sbr"
+                                width="600"
+                                height="450"
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            <h4>Um pouco sobre</h4>
+                            <p className="fw-medium">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Inventore sapiente ullam quas
+                                exercitationem placeat iusto nisi, doloremque
+                                cumque hic illum nemo dolores accusantium
+                                repellat! Impedit et eaque doloremque repellat
+                                in.
+                            </p>
+                        </div>
+                        <div className="col-md-6">
+                            <h3>Campo</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.8891332933515!2d-36.84465666622215!3d-9.040068381694653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b16703d9dffb%3A0xde4b4cf3d3d7b607!2sCampo%20de%20Futebol!5e1!3m2!1spt-BR!2sbr!4v1709209100222!5m2!1spt-BR!2sbr"
+                                width="600"
+                                height="450"
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            <h4>Um pouco sobre</h4>
+                            <p className="fw-medium">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Cumque a, dignissimos
+                                excepturi velit eligendi odio hic quam cum quod
+                                nostrum veritatis voluptates, fugiat qui. Autem
+                                optio dolorem reprehenderit sequi. Aut.
+                            </p>
+                        </div>
+                    </article>
+                    <h4 className="text-success py-2">
+                        Academias e locais de esporte privados
+                    </h4>
+                    <article className="row">
+                        <div className="col-md-6">
+                            <h3>AquaRc</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7654.8100483897015!2d-36.851108041308585!3d-9.038426199999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b1f8168af439%3A0x8eab560c3a19e3db!2sACQUARC!5e1!3m2!1spt-BR!2sbr!4v1709209739102!5m2!1spt-BR!2sbr"
+                                width="600"
+                                height="450"
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            <h4>Um pouco sobre</h4>
+                            <p className="fw-medium">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Inventore sapiente ullam quas
+                                exercitationem placeat iusto nisi, doloremque
+                                cumque hic illum nemo dolores accusantium
+                                repellat! Impedit et eaque doloremque repellat
+                                in.
+                            </p>
+                        </div>
+                        <div className="col-md-6">
+                            <h3>Academia Rf</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.6816882128253!2d-36.85140207409857!3d-9.042344727144675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b116b2ed0d29%3A0xa9ad9156996d77cf!2sAcademia%20RF!5e1!3m2!1spt-BR!2sbr!4v1709210475060!5m2!1spt-BR!2sbr"
+                                width="600"
+                                height="450"
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            <h4>Um pouco sobre</h4>
+                            <p className="fw-medium">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Cumque a, dignissimos
+                                excepturi velit eligendi odio hic quam cum quod
+                                nostrum veritatis voluptates, fugiat qui. Autem
+                                optio dolorem reprehenderit sequi. Aut.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section className="pt-5">
+                    <div className="row d-flex align-items-center">
+                        <div className="col-md-5">
+                            <h1 className="display-4 text-success">
+                                Por fim...
+                            </h1>
+                            <p>
+                                Em conclusão, a saúde é um estado de bem-estar
+                                físico, mental e social. É importante manter uma
+                                dieta saudável, fazer exercício físico
+                                regularmente e dormir o suficiente para manter
+                                uma boa saúde. Se tiveres algum problema de
+                                saúde, é importante consultar um médico para
+                                obter tratamento... Neste site ainda temos mais
+                                duas áreas a educação e um pouco sobre a gente
+                                façam uma visita ;)
+                            </p>
+                        </div>
+                        <img
+                            className="col-md-6 img-fluid"
+                            src={Running}
+                            alt="person-run"
+                        />
+                    </div>
+                </section>
             </main>
         </>
     );
