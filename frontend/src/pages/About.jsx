@@ -132,7 +132,7 @@ export default () => {
                     </ul>
 
                     <article className="pt-5">
-                        <h1>como funciona?</h1>
+                        <h1 className="fw-bold text-primary">como funciona?</h1>
                         <p>
                             O Cursilho é constituído de três momentos. O
                             primeiro, chamado Pré-Cursilho, intenta identificar
@@ -148,21 +148,23 @@ export default () => {
                             integrantes do movimento, cada indivíduo tem a
                             oportunidade de refletir sobre sua maneira de ser,
                             suas limitações e qualidades, e reconhece o espaço a
-                            ser preenchido por Deus. A seguir, é apresentada ao
-                            Jesus histórico e àquele que continua presente na
-                            Eucaristia e em outras pessoas. Ao final, prepara-se
-                            para o contato com o mundo. “O que tenho de melhor
-                            para levar a outros é o Cristo em mim. Buscamos
-                            possibilitar a convivência fraterna e sempre o
-                            melhor para quem está ao redor”, disse. Um jeito
-                            novo e diferente de viver, uma proposta de
-                            esperança, um testemunho de vida é fomentado a
-                            partir de cada pessoa – e, assim, se busca
-                            transformar os ambientes. “Se a pessoa se abrir para
-                            a fé, ótimo. Mas propomos que tenha uma nova visão
-                            da vida”, pontuou. O Pós-Cursilho é um meio
-                            destinado a desenvolver e impulsionar a vivência
-                            cristã iniciada no encontro. Todas as
+                            ser preenchido por Deus.
+                        </p>
+                        <p>
+                            A seguir, é apresentada ao Jesus histórico e àquele
+                            que continua presente na Eucaristia e em outras
+                            pessoas. Ao final, prepara-se para o contato com o
+                            mundo. “O que tenho de melhor para levar a outros é
+                            o Cristo em mim. Buscamos possibilitar a convivência
+                            fraterna e sempre o melhor para quem está ao redor”,
+                            disse. Um jeito novo e diferente de viver, uma
+                            proposta de esperança, um testemunho de vida é
+                            fomentado a partir de cada pessoa – e, assim, se
+                            busca transformar os ambientes. “Se a pessoa se
+                            abrir para a fé, ótimo. Mas propomos que tenha uma
+                            nova visão da vida”, pontuou. O Pós-Cursilho é um
+                            meio destinado a desenvolver e impulsionar a
+                            vivência cristã iniciada no encontro. Todas as
                             segundas-feiras à noite, por exemplo, é realizada a
                             Escola, destinada a todos que um dia já participaram
                             do movimento. Atividades de formação, aprofundamento
