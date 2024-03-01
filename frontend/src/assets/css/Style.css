@@ -50,6 +50,10 @@
     background-image: url(../svgs/bg-education.svg);
 }
 
+.bg-principal {
+    background-image: url(../svgs/bg-principal.svg);
+}
+
 .bg-header span,
 .bg-health span,
 .bg-education span {
@@ -106,4 +110,14 @@ ol a:hover {
 
 ol li {
     margin: 5px;
+}
+
+.img-q {
+    width: 30rem !important;
+}
+
+@media (max-width: 991.98px) {
+    .img-q {
+        width: 20rem !important;
+    }
 }
