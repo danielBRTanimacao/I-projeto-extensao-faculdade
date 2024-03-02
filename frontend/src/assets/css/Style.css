@@ -1,5 +1,4 @@
 :root {
-    --blue-variant: rgb(25, 25, 135);
     --orange-base: #ef7f1a;
     --green-base: rgb(19, 85, 60);
     --grey-variant: #888;
@@ -48,10 +47,6 @@
 
 .bg-education {
     background-image: url(../svgs/bg-education.svg);
-}
-
-.bg-principal {
-    background-image: url(../svgs/bg-principal.svg);
 }
 
 .bg-header span,
