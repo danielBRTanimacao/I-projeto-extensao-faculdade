@@ -43,7 +43,7 @@ export default () => {
             lightRender(
                 ["bg-header", "bg-health"],
                 "bg-education",
-                "O processo de aprendizagem ajuda a desenvolver habilidades, conhecimentos e valores.",
+                "A aprendizagem ajuda a desenvolver habilidades, conhecimentos e valores.",
                 <Education />
             );
         }
