@@ -479,12 +479,9 @@ export default () => {
                             ></iframe>
                             <h4>Um pouco sobre</h4>
                             <p className="fw-medium">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Inventore sapiente ullam quas
-                                exercitationem placeat iusto nisi, doloremque
-                                cumque hic illum nemo dolores accusantium
-                                repellat! Impedit et eaque doloremque repellat
-                                in.
+                                Localizado no loteamento Soaree, no AquaRc e um
+                                otimo local para pratica de esportes como a
+                                natação que e seu principal meio...
                             </p>
                         </div>
                         <div className="col-md-6">
@@ -500,11 +497,10 @@ export default () => {
                             ></iframe>
                             <h4>Um pouco sobre</h4>
                             <p className="fw-medium">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cumque a, dignissimos
-                                excepturi velit eligendi odio hic quam cum quod
-                                nostrum veritatis voluptates, fugiat qui. Autem
-                                optio dolorem reprehenderit sequi. Aut.
+                                Localizado em meio a duas ruas uma sendo a
+                                principal e outra sendo R. Lourenço José da
+                                Costa, Academia Rf e possivel praticar praticar
+                                diversas atividades fisicas como a musculação
                             </p>
                         </div>
                     </article>
