@@ -107,12 +107,18 @@ ol li {
     margin: 5px;
 }
 
-.img-q {
-    width: 30rem !important;
+.div-max {
+    margin: 0 10rem;
 }
 
-@media (max-width: 991.98px) {
-    .img-q {
-        width: 20rem !important;
+@media (max-width: 1399.98px) {
+    .div-max {
+        margin: 0 6rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .div-max {
+        margin: 0 0.5rem;
     }
 }

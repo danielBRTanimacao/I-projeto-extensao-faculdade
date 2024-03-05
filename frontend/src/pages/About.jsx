@@ -21,18 +21,24 @@ export default () => {
                                 facere quod fugit.
                             </p>
                         </div>
-                        <img
-                            className="col-md-6 img-q"
-                            src={Question}
-                            alt="svg"
-                        />
+                        <div className="col-md-6">
+                            <img
+                                className="img-fluid"
+                                src={Question}
+                                alt="svg"
+                            />
+                        </div>
                     </div>
                 </section>
                 <section>
                     <article className="">
                         <h2 className="fw-bold text-primary">Nossa historia</h2>
                         <aside>
-                            <strong>Tirado wikipedia</strong>
+                            <strong>
+                                <a href="https://pt.wikipedia.org/wiki/Cursilho">
+                                    Tirado wikipedia
+                                </a>
+                            </strong>
                             <p>
                                 O Movimento de Cursilhos de Cristandade ou
                                 “Pequeno Caminho” - modo como era conhecido

@@ -117,25 +117,25 @@ export default () => {
                                     />
                                 </div>
                             </article>
-                            <aside className="row">
+                            <aside className="row px-3">
                                 <article className="col-md-6">
                                     <h3 className="text-success display-6">
                                         Alimentação
                                     </h3>
-                                    <div>
+                                    <p className="m-1">
                                         A alimentação é um dos pilares da saúde.
                                         Uma dieta saudável deve ser rica em
                                         frutas, vegetais, legumes e grãos
                                         integrais. Também é importante limitar o
                                         consumo de alimentos processados,
                                         açúcares e gorduras saturadas.
-                                    </div>
+                                    </p>
                                 </article>
                                 <article className="col-md-6">
                                     <h3 className="text-success display-6">
                                         Exercicio fisico
                                     </h3>
-                                    <p>
+                                    <p className="m-1">
                                         O exercício físico é outro pilar da
                                         saúde. A atividade física regular ajuda
                                         a manter o peso saudável, fortalece os
@@ -391,15 +391,15 @@ export default () => {
                     <h1 className="display-5 fw-bold text-success py-3">
                         Locais praticos para a execução de exercicios fisicos
                     </h1>
-                    <div className="shadow-lg rounded">
+                    <div className="shadow-lg rounded div-max">
                         <img
                             src={Socrates}
                             width={350}
-                            alt="socrates-img"
+                            alt="img-fluid"
                             className="img-fluid rounded-circle shadow-lg pt-2"
                         />
                         <figure className="text-center py-2">
-                            <blockquote className="blockquote">
+                            <blockquote className="blockquote py-3">
                                 <p>
                                     ...Que desgraça é para o homem envelhecer
                                     sem nunca ver a beleza e força que o seu
@@ -422,6 +422,7 @@ export default () => {
                         <div className="col-md-6">
                             <h3>Academia açude</h3>
                             <iframe
+                                className="ratio"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d402.2972613809833!2d-36.84441332671213!3d-9.046600438284303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1709208678981!5m2!1spt-BR!2sbr"
                                 width="350"
                                 height="325"
@@ -431,17 +432,19 @@ export default () => {
                             ></iframe>
                             <h4>Um pouco sobre</h4>
                             <p className="fw-medium">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Inventore sapiente ullam quas
-                                exercitationem placeat iusto nisi, doloremque
-                                cumque hic illum nemo dolores accusantium
-                                repellat! Impedit et eaque doloremque repellat
-                                in.
+                                Localizada proximo ao velho açude na saida do
+                                municipio esta academia é ao ar livre com o
+                                intuito ligado à saúde municipal, trazendo
+                                atividade física e as práticas corporais como as
+                                principais ações de intervenção sobre os fatores
+                                de risco de doenças e sedentarismo, para estes
+                                grupos.
                             </p>
                         </div>
                         <div className="col-md-6">
                             <h3>Campo</h3>
                             <iframe
+                                className="ratio"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1137.8891332933515!2d-36.84465666622215!3d-9.040068381694653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b16703d9dffb%3A0xde4b4cf3d3d7b607!2sCampo%20de%20Futebol!5e1!3m2!1spt-BR!2sbr!4v1709209100222!5m2!1spt-BR!2sbr"
                                 width="350"
                                 height="325"
@@ -451,11 +454,11 @@ export default () => {
                             ></iframe>
                             <h4>Um pouco sobre</h4>
                             <p className="fw-medium">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cumque a, dignissimos
-                                excepturi velit eligendi odio hic quam cum quod
-                                nostrum veritatis voluptates, fugiat qui. Autem
-                                optio dolorem reprehenderit sequi. Aut.
+                                Localizado na rua "R. Padre Nelson B Carvalho" o
+                                campo e quadra são utilizadas para a realização
+                                das inúmeras competições municipais, estaduais e
+                                também para ensinamentos esportivos, através dos
+                                Núcleos de Educação Esportiva.
                             </p>
                         </div>
                     </article>
@@ -466,6 +469,7 @@ export default () => {
                         <div className="col-md-6">
                             <h3>AquaRc</h3>
                             <iframe
+                                className="ratio"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7654.8100483897015!2d-36.851108041308585!3d-9.038426199999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b1f8168af439%3A0x8eab560c3a19e3db!2sACQUARC!5e1!3m2!1spt-BR!2sbr!4v1709209739102!5m2!1spt-BR!2sbr"
                                 width="350"
                                 height="325"
@@ -486,6 +490,7 @@ export default () => {
                         <div className="col-md-6">
                             <h3>Academia Rf</h3>
                             <iframe
+                                className="ratio"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.6816882128253!2d-36.85140207409857!3d-9.042344727144675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b116b2ed0d29%3A0xa9ad9156996d77cf!2sAcademia%20RF!5e1!3m2!1spt-BR!2sbr!4v1709210475060!5m2!1spt-BR!2sbr"
                                 width="350"
                                 height="325"

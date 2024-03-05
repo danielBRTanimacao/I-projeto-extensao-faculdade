@@ -17,7 +17,7 @@ export default () => {
                         <img src={MccLogo} alt="logo-mcc" />
                     </a>
                     <span className="mb-3 mb-md-0 text-body-secondary">
-                        © 2024 Company, Inc
+                        © 2024
                     </span>
                 </div>
 
@@ -43,7 +43,7 @@ export default () => {
                             className="text-body-secondary"
                             href="https://www.unopar.com.br"
                         >
-                            <img src={Book} alt="face" />
+                            <img src={Book} alt="book" />
                         </a>
                     </li>
                 </ul>
