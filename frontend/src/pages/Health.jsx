@@ -497,9 +497,9 @@ export default () => {
                             ></iframe>
                             <h4>Um pouco sobre</h4>
                             <p className="fw-medium">
-                                Localizado em meio a duas ruas uma sendo a
-                                principal e outra sendo R. Lourenço José da
-                                Costa, Academia Rf e possivel praticar praticar
+                                Localizado em meio a duas ruas sendo elas a
+                                principal e a R. Lourenço José da Costa,
+                                Academia Rf e possivel praticar praticar
                                 diversas atividades fisicas como a musculação
                             </p>
                         </div>
@@ -519,8 +519,9 @@ export default () => {
                                 uma boa saúde. Se tiveres algum problema de
                                 saúde, é importante consultar um médico para
                                 obter tratamento... Neste site ainda temos mais
-                                duas áreas a educação e um pouco sobre a gente
-                                façam uma visita ;)
+                                duas áreas a <a href="#change">educação</a> e um
+                                pouco <a href="#change">sobre a gente</a> façam
+                                uma visita ;)
                             </p>
                         </div>
                         <img
