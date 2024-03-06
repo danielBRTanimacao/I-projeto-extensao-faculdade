@@ -1,4 +1,5 @@
 :root {
+    --darker-blue: #070f2b;
     --orange-base: #ef7f1a;
     --green-base: rgb(19, 85, 60);
     --grey-variant: #888;
@@ -121,4 +122,12 @@ ol li {
     .div-max {
         margin: 0 0.5rem;
     }
+}
+
+.color-primary {
+    color: var(--darker-blue);
+}
+
+.navbar-link a {
+    color: var(--darker-blue);
 }
