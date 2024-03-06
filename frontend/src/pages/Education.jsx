@@ -4,32 +4,62 @@ export default () => {
     return (
         <>
             <main className="container">
-                <header className="navbar navbar-expand-lg">
-                    <div>
-                        <h2 className="fw-bold color-primary">
-                            Lorem ipsum dolor sit amet.
-                        </h2>
+                <nav className="navbar sticky-top bg-body-tertiary navbar-expand-md color-primary shadow">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#">
+                            links rapidos...
+                        </a>
+                        <button
+                            className="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            className="collapse navbar-collapse"
+                            id="navbarNav"
+                        >
+                            <ul className="navbar-nav navbar-link">
+                                <li className="nav-item">
+                                    <a
+                                        className="nav-link"
+                                        aria-current="page"
+                                        href="#free-course"
+                                    >
+                                        Cursos grátis
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        className="nav-link"
+                                        href="#iati-courses"
+                                    >
+                                        Cursos em Iati
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        className="nav-link"
+                                        href="#recomendation"
+                                    >
+                                        Recomendações
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <nav className="collapse navbar-collapse">
-                        <ul className="navbar-link navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Cursos grátis
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Cursos em nossa cidade
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Recomendações
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+                </nav>
+                <section className="pt-3">
+                    <div>informações</div>
+                    <div>cursos gratuitos</div>
+                    <div>cursos iati</div>
+                    <div>Recomendações</div>
+                </section>
             </main>
         </>
     );

@@ -125,9 +125,9 @@ ol li {
 }
 
 .color-primary {
-    color: var(--darker-blue);
+    color: var(--darker-blue) !important;
 }
 
 .navbar-link a {
-    color: var(--darker-blue);
+    color: var(--darker-blue) !important;
 }
