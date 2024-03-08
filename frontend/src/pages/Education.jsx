@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default () => {
+    const [courseSearchId, SetcourseSearchId] = useState("#item1");
+
     return (
         <>
             <main className="container">
@@ -37,9 +39,9 @@ export default () => {
                                 <li className="nav-item">
                                     <a
                                         className="nav-link"
-                                        href="#iati-courses"
+                                        href="#city-courses"
                                     >
-                                        Cursos em Iati
+                                        Cursos na cidade
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -54,12 +56,77 @@ export default () => {
                         </div>
                     </div>
                 </nav>
-                <section className="pt-3">
-                    <div>informações</div>
-                    <div>cursos gratuitos</div>
-                    <div>cursos iati</div>
-                    <div>Recomendações</div>
+                <section className="pt-4">
+                    <article className="row">
+                        <div className="col-md-7 d-flex align-items-center">
+                            <div>
+                                <h1 className="display-4 color-primary">
+                                    Educação em nosso municipio.
+                                    <span className="text-body-secondary">
+                                        {" "}
+                                        Iati-Pe
+                                    </span>
+                                </h1>
+                                <p className="lead">
+                                    Em Iati Pernambuco existem vários cursos,
+                                    tanto gratuitos quanto privados. Porém,
+                                    neste artigo não iremos abordar apenas
+                                    cursos locais, mas sim cursos onlines de
+                                    diversas áreas, todavia as principais serão
+                                    tecnologia.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-md-5">
+                            <iframe
+                                className="ratio"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11144.64681882881!2d-36.85337971129714!3d-9.04298546977843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b16040b6eb6f%3A0x8c0d787d15d4dd53!2sIati%2C%20PE%2C%2055345-000!5e0!3m2!1spt-BR!2sbr!4v1709900655677!5m2!1spt-BR!2sbr"
+                                height="450"
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </article>
                 </section>
+                <section className="pt-5">
+                    <nav className="navbar">
+                        <div className="container-fluid">
+                            <h3 className="display-4 fs-2">
+                                Cursos disponiveis
+                            </h3>
+                            <form
+                                action={courseSearchId}
+                                className="d-flex"
+                                role="search"
+                            >
+                                <input
+                                    className="form-control me-2"
+                                    type="search"
+                                    placeholder="Procura por um curso"
+                                    aria-label="Search"
+                                />
+                                <button
+                                    className="btn btn-outline-primary"
+                                    type="submit"
+                                >
+                                    Buscar
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
+                    <section className="pt-3">
+                        <div className="bg-body-tertiary">
+                            <div className="bg-light">
+                                <img src="" alt="item" />
+                                <h5>item</h5>
+                                <p>course</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div>cursos iati</div>
+                <div>Recomendações</div>
             </main>
         </>
     );
