@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+
+import OurCourses from "../assets/json/CourseList.json";
 
 export default () => {
-    const [courseSearchId, SetcourseSearchId] = useState("#item1");
+    const [courseSearchId, SetcourseSearchId] = useState("#item");
+
+    const inputRef = useRef();
+    const fetchCourses = () => {
+        console.log(inputRef.current.value);
+        console.log(OurCourses);
+        return courseSearchId;
+    };
 
     return (
         <>
@@ -96,11 +105,12 @@ export default () => {
                                 Cursos disponiveis
                             </h3>
                             <form
-                                action={courseSearchId}
+                                onSubmit={fetchCourses}
                                 className="d-flex"
                                 role="search"
                             >
                                 <input
+                                    ref={inputRef}
                                     className="form-control me-2"
                                     type="search"
                                     placeholder="Procura por um curso"
@@ -117,7 +127,7 @@ export default () => {
                     </nav>
                     <section className="pt-3">
                         <div className="bg-body-tertiary">
-                            <div className="bg-light">
+                            <div className="bg-light" id="#item">
                                 <img src="" alt="item" />
                                 <h5>item</h5>
                                 <p>course</p>
