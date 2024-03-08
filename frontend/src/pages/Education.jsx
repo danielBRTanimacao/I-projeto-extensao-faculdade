@@ -1,4 +1,5 @@
 import React from "react";
+import CoursesPage from "../components/CoursesPage";
 
 export default () => {
     return (
@@ -88,13 +89,20 @@ export default () => {
                     </article>
                 </section>
                 <section className="pt-5">
+                    <h1 className="display-4 fw-bold fs-2">
+                        Todos os cursos gratis
+                    </h1>
                     <article className="pt-3">
-                        <div className="bg-body-tertiary">
-                            <div className="bg-light" id="#item">
-                                <img src="" alt="item" />
-                                <h5>item</h5>
-                                <p>course</p>
-                            </div>
+                        <button>seta</button>
+                        <button>direita</button>
+                        <div className="bg-other-primary rounded p-2 d-flex">
+                            <CoursesPage
+                                course_name={"Curso em vídeo"}
+                                link_course={"https://www.cursoemvideo.com"}
+                            />
+                            <CoursesPage course_name={"Outro"} />
+                            <CoursesPage course_name={"Outro2"} />
+                            <CoursesPage course_name={"Outro3"} />
                         </div>
                     </article>
                 </section>

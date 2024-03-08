@@ -131,3 +131,7 @@ ol li {
 .navbar-link a {
     color: var(--darker-blue) !important;
 }
+
+.bg-other-primary {
+    background-color: #070f2b25;
+}
