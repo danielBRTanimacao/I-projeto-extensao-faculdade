@@ -1,17 +1,6 @@
-import React, { useRef, useState } from "react";
-
-import OurCourses from "../assets/json/CourseList.json";
+import React from "react";
 
 export default () => {
-    const [courseSearchId, SetcourseSearchId] = useState("#item");
-
-    const inputRef = useRef();
-    const fetchCourses = () => {
-        console.log(inputRef.current.value);
-        console.log(OurCourses);
-        return courseSearchId;
-    };
-
     return (
         <>
             <main className="container">
@@ -99,33 +88,7 @@ export default () => {
                     </article>
                 </section>
                 <section className="pt-5">
-                    <nav className="navbar">
-                        <div className="container-fluid">
-                            <h3 className="display-4 fs-2">
-                                Cursos disponiveis
-                            </h3>
-                            <form
-                                onSubmit={fetchCourses}
-                                className="d-flex"
-                                role="search"
-                            >
-                                <input
-                                    ref={inputRef}
-                                    className="form-control me-2"
-                                    type="search"
-                                    placeholder="Procura por um curso"
-                                    aria-label="Search"
-                                />
-                                <button
-                                    className="btn btn-outline-primary"
-                                    type="submit"
-                                >
-                                    Buscar
-                                </button>
-                            </form>
-                        </div>
-                    </nav>
-                    <section className="pt-3">
+                    <article className="pt-3">
                         <div className="bg-body-tertiary">
                             <div className="bg-light" id="#item">
                                 <img src="" alt="item" />
@@ -133,7 +96,7 @@ export default () => {
                                 <p>course</p>
                             </div>
                         </div>
-                    </section>
+                    </article>
                 </section>
                 <div>cursos iati</div>
                 <div>Recomendações</div>
