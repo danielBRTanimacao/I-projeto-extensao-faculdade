@@ -1,16 +1,21 @@
 import React from "react";
 
-export default ({ course_name, link_course, img_course }) => {
+import NotFound from "../assets/svgs/not_found.svg";
+
+export default ({
+    course_name = "Não encontrado",
+    link_course = "#",
+    img_course = NotFound
+}) => {
     return (
         <>
-            <a href={link_course} className="bg-light rounded p-2 m-1 col-lg-3">
+            <a href={link_course} className="col-lg-3 hover-anim-img">
                 <img
                     className="img-fluid p-1"
                     src={img_course}
                     alt="img-course"
                 />
-                <h5>{course_name}</h5>
-                <p>Link course</p>
+                <h5 className="pt-3">{course_name}</h5>
             </a>
         </>
     );

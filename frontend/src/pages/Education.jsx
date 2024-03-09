@@ -94,12 +94,12 @@ export default () => {
                 </section>
                 <section className="pt-5">
                     <hr />
-                    <section className="text-center py-2">
+                    <section className="text-center py-2" id="free-course">
                         <article className="pt-3">
                             <h1 className="display-4 fw-bold color-primary">
                                 Cursos Tecnologia Gratuitos
                             </h1>
-                            <div className="bg-other-primary rounded p-2 row d-flex justify-content-center">
+                            <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
                                     course_name={"Curso em vídeo"}
                                     link_course={"https://www.cursoemvideo.com"}
@@ -119,6 +119,7 @@ export default () => {
                                     }
                                     img_course={DevDojo}
                                 />
+                                <CoursesPage />
                             </div>
                         </article>
                     </section>

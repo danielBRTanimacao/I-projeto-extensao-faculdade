@@ -132,6 +132,12 @@ ol li {
     color: var(--darker-blue) !important;
 }
 
-.bg-other-primary {
-    background-color: #070f2b25;
+.hover-anim-img {
+    text-decoration: none;
+    color: var(--darker-blue);
+}
+
+.hover-anim-img:hover img {
+    opacity: 0.5;
+    transition: all 1s;
 }
