@@ -1,6 +1,10 @@
 import React from "react";
 import CoursesPage from "../components/CoursesPage";
 
+import CursoEmVideoImg from "../assets/svgs/thumbs/CursoEmVideo.svg";
+import JoaoRibeiro from "../assets/svgs/thumbs/JoaoRibeiro.svg";
+import DevDojo from "../assets/svgs/thumbs/DevDoja.svg";
+
 export default () => {
     return (
         <>
@@ -89,22 +93,35 @@ export default () => {
                     </article>
                 </section>
                 <section className="pt-5">
-                    <h1 className="display-4 fw-bold fs-2">
-                        Todos os cursos gratis
-                    </h1>
-                    <article className="pt-3">
-                        <button>seta</button>
-                        <button>direita</button>
-                        <div className="bg-other-primary rounded p-2 d-flex">
-                            <CoursesPage
-                                course_name={"Curso em vídeo"}
-                                link_course={"https://www.cursoemvideo.com"}
-                            />
-                            <CoursesPage course_name={"Outro"} />
-                            <CoursesPage course_name={"Outro2"} />
-                            <CoursesPage course_name={"Outro3"} />
-                        </div>
-                    </article>
+                    <hr />
+                    <section className="text-center py-2">
+                        <article className="pt-3">
+                            <h1 className="display-4 fw-bold color-primary">
+                                Cursos Tecnologia Gratuitos
+                            </h1>
+                            <div className="bg-other-primary rounded p-2 row d-flex justify-content-center">
+                                <CoursesPage
+                                    course_name={"Curso em vídeo"}
+                                    link_course={"https://www.cursoemvideo.com"}
+                                    img_course={CursoEmVideoImg}
+                                />
+                                <CoursesPage
+                                    course_name={"joão Ribeiro"}
+                                    link_course={
+                                        "https://www.youtube.com/@JLDRPT"
+                                    }
+                                    img_course={JoaoRibeiro}
+                                />
+                                <CoursesPage
+                                    course_name={"DevDojo"}
+                                    link_course={
+                                        "https://www.youtube.com/@DevDojoBrasil"
+                                    }
+                                    img_course={DevDojo}
+                                />
+                            </div>
+                        </article>
+                    </section>
                 </section>
                 <div>cursos iati</div>
                 <div>Recomendações</div>
