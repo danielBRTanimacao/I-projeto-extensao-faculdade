@@ -119,6 +119,36 @@ export default () => {
                                     }
                                     img_course={DevDojo}
                                 />
+                                <CoursesPage
+                                    course_name="Otavio Miranda"
+                                    link_course="https://www.youtube.com/@OtavioMiranda"
+                                />
+                            </div>
+                        </article>
+                        <article className="pt-3">
+                            <h1 className="display-4 fw-bold color-primary">
+                                Cursos Lorem ipsum dolor sit amet
+                            </h1>
+                            <div className="rounded p-2 row d-flex justify-content-center">
+                                <CoursesPage
+                                    course_name={"Curso em vídeo"}
+                                    link_course={"https://www.cursoemvideo.com"}
+                                    img_course={CursoEmVideoImg}
+                                />
+                                <CoursesPage
+                                    course_name={"joão Ribeiro"}
+                                    link_course={
+                                        "https://www.youtube.com/@JLDRPT"
+                                    }
+                                    img_course={JoaoRibeiro}
+                                />
+                                <CoursesPage
+                                    course_name={"DevDojo"}
+                                    link_course={
+                                        "https://www.youtube.com/@DevDojoBrasil"
+                                    }
+                                    img_course={DevDojo}
+                                />
                                 <CoursesPage />
                             </div>
                         </article>

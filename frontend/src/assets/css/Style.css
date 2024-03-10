@@ -137,7 +137,10 @@ ol li {
     color: var(--darker-blue);
 }
 
-.hover-anim-img:hover img {
+.hover-anim-img:hover img,
+.hover-anim-img:hover h5 {
+    font-size: 1.5rem;
+    height: 120px;
     opacity: 0.5;
-    transition: all 1s;
+    transition: all 0.5s;
 }
