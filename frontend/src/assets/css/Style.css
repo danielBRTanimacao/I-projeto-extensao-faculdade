@@ -133,14 +133,24 @@ ol li {
 }
 
 .hover-anim-img {
+    height: 12rem;
     text-decoration: none;
     color: var(--darker-blue);
+}
+
+.hover-anim-img img {
+    height: 150px;
+}
+
+@media (max-width: 1399.98px) {
+    .hover-anim-img {
+        height: 16rem;
+    }
 }
 
 .hover-anim-img:hover img,
 .hover-anim-img:hover h5 {
     font-size: 1.5rem;
-    height: 120px;
     opacity: 0.5;
     transition: all 0.5s;
 }

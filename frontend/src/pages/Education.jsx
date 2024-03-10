@@ -95,7 +95,7 @@ export default () => {
                 <section className="pt-5">
                     <hr />
                     <section className="text-center py-2" id="free-course">
-                        <article className="pt-3">
+                        <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
                                 Cursos Tecnologia Gratuitos
                             </h1>
@@ -122,12 +122,27 @@ export default () => {
                                 <CoursesPage
                                     course_name="Otavio Miranda"
                                     link_course="https://www.youtube.com/@OtavioMiranda"
+                                    img_course="https://i.ytimg.com/vi/UNiRHn2iusg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM5uRkzZpNZGfl5As2JJ1K-klvaQ"
+                                />
+                                <CoursesPage
+                                    course_name={"Programação Dinamica"}
+                                    link_course={
+                                        "https://www.youtube.com/@pgdinamica/playlists"
+                                    }
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kDwiRr4aHmcN0FIakbBH1rrKr_xcgkCSsFuGIF=s176-c-k-c0x00ffffff-no-rj"
+                                />
+                                <CoursesPage
+                                    course_name={"Fabio Akita"}
+                                    link_course={
+                                        "https://www.youtube.com/@Akitando"
+                                    }
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_n55sOFHByv5ViFdq81qYB4FzivrH7BonFqhkKyD6w=s176-c-k-c0x00ffffff-no-rj"
                                 />
                             </div>
                         </article>
-                        <article className="pt-3">
+                        <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
-                                Cursos Lorem ipsum dolor sit amet
+                                Cursos
                             </h1>
                             <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
@@ -149,7 +164,25 @@ export default () => {
                                     }
                                     img_course={DevDojo}
                                 />
-                                <CoursesPage />
+                                <CoursesPage
+                                    course_name="Otavio Miranda"
+                                    link_course="https://www.youtube.com/@OtavioMiranda"
+                                    img_course="https://i.ytimg.com/vi/UNiRHn2iusg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM5uRkzZpNZGfl5As2JJ1K-klvaQ"
+                                />
+                                <CoursesPage
+                                    course_name={"Programação Dinamica"}
+                                    link_course={
+                                        "https://www.youtube.com/@pgdinamica/playlists"
+                                    }
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kDwiRr4aHmcN0FIakbBH1rrKr_xcgkCSsFuGIF=s176-c-k-c0x00ffffff-no-rj"
+                                />
+                                <CoursesPage
+                                    course_name={"Fabio Akita"}
+                                    link_course={
+                                        "https://www.youtube.com/@Akitando"
+                                    }
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_n55sOFHByv5ViFdq81qYB4FzivrH7BonFqhkKyD6w=s176-c-k-c0x00ffffff-no-rj"
+                                />
                             </div>
                         </article>
                     </section>
