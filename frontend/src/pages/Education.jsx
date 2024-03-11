@@ -97,7 +97,7 @@ export default () => {
                     <section className="text-center py-2" id="free-course">
                         <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
-                                Cursos Tecnologia Gratuitos
+                                Canais e Cursos Tecnologia
                             </h1>
                             <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
@@ -142,53 +142,129 @@ export default () => {
                         </article>
                         <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
-                                Cursos
+                                Cursos arte, design e musica
                             </h1>
                             <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
-                                    course_name={"Curso em vídeo"}
-                                    link_course={"https://www.cursoemvideo.com"}
-                                    img_course={CursoEmVideoImg}
-                                />
-                                <CoursesPage
-                                    course_name={"joão Ribeiro"}
+                                    course_name={"Desenho Mestre"}
                                     link_course={
-                                        "https://www.youtube.com/@JLDRPT"
+                                        "https://www.youtube.com/@DesenhoMestre"
                                     }
-                                    img_course={JoaoRibeiro}
+                                    img_course="https://yt3.googleusercontent.com/N2T6rTdb3W9BRfZxFd8ZZ452y9rZx5BMFbHk1Hwc81yoys8utiLG3dvX8WAVhCF6XgjYe1wHneE=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name={"DevDojo"}
+                                    course_name={"Cezar Romero Cifras"}
                                     link_course={
-                                        "https://www.youtube.com/@DevDojoBrasil"
+                                        "https://www.youtube.com/@cezarromero/videos"
                                     }
-                                    img_course={DevDojo}
+                                    img_course="https://yt3.googleusercontent.com/Ajz1V1TeaYTcoqEKIljNSdbeVfZf43n-U50uxUGGzrRyT_6wtVOY-HWznzL_H1g3w-7pVl_VcO8=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="Otavio Miranda"
-                                    link_course="https://www.youtube.com/@OtavioMiranda"
-                                    img_course="https://i.ytimg.com/vi/UNiRHn2iusg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM5uRkzZpNZGfl5As2JJ1K-klvaQ"
-                                />
-                                <CoursesPage
-                                    course_name={"Programação Dinamica"}
+                                    course_name={"CrasConversaOficial"}
                                     link_course={
-                                        "https://www.youtube.com/@pgdinamica/playlists"
+                                        "https://www.youtube.com/@CrasConversaOficial"
                                     }
-                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kDwiRr4aHmcN0FIakbBH1rrKr_xcgkCSsFuGIF=s176-c-k-c0x00ffffff-no-rj"
+                                    img_course="https://yt3.googleusercontent.com/3-3QmX9gPX3vWjKJ_ni4ccrsuMqJUG2KXuxMEiSoNEoMIl44IPNHXdKosnSrB0iFguVDBTOS=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name={"Fabio Akita"}
+                                    course_name="Eli Neves"
+                                    link_course="https://www.youtube.com/@EliNeves/playlists"
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kt2AMROfItn-L1LoRraT-3L7fiMPpHuIq6j2V2TQ=s176-c-k-c0x00ffffff-no-rj"
+                                />
+                                <CoursesPage
+                                    course_name={"Design de Conversão"}
                                     link_course={
-                                        "https://www.youtube.com/@Akitando"
+                                        "https://www.youtube.com/@DesigndeConversao/featured"
                                     }
-                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_n55sOFHByv5ViFdq81qYB4FzivrH7BonFqhkKyD6w=s176-c-k-c0x00ffffff-no-rj"
+                                    img_course="https://yt3.googleusercontent.com/-3WZ1elrAl2QOAwi2uLRksxgbwPYtEXwVpF9KvlxwN6w_s6dmeLKGFwFQaFrCCPTdQAXDj1ubQ=s176-c-k-c0x00ffffff-no-rj"
+                                />
+                                <CoursesPage
+                                    course_name={"Q28a™ // Graphic Design"}
+                                    link_course={
+                                        "https://www.youtube.com/@Q28a/playlists"
+                                    }
+                                    img_course="https://yt3.googleusercontent.com/pTUm7qWjqJVwhFRMjSmBxWbDD_1eMxPKzW2b_Ke-CfaIpfIqstlNWaawolMa2yisp92gOe2kFnQ=s176-c-k-c0x00ffffff-no-rj"
+                                />
+                            </div>
+                        </article>
+                        <article className="py-5">
+                            <h1 className="display-4 fw-bold color-primary">
+                                Cursos de ##
+                            </h1>
+                            <div className="rounded p-2 row d-flex justify-content-center">
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                            </div>
+                        </article>
+                        <article className="py-5">
+                            <h1 className="display-4 fw-bold color-primary">
+                                Cursos de ##
+                            </h1>
+                            <div className="rounded p-2 row d-flex justify-content-center">
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
+                                />
+                                <CoursesPage
+                                    course_name="course"
+                                    link_course={"#"}
+                                    img_course=""
                                 />
                             </div>
                         </article>
                     </section>
                 </section>
-                <div>cursos iati</div>
-                <div>Recomendações</div>
+                <div id="city-courses">cursos iati</div>
+                <div id="recomendation">Recomendações</div>
             </main>
         </>
     );
