@@ -4,6 +4,7 @@ import CoursesPage from "../components/CoursesPage";
 import CursoEmVideoImg from "../assets/svgs/thumbs/CursoEmVideo.svg";
 import JoaoRibeiro from "../assets/svgs/thumbs/JoaoRibeiro.svg";
 import DevDojo from "../assets/svgs/thumbs/DevDoja.svg";
+import CityImg from "../assets/imgs/iati.jpg";
 
 export default () => {
     return (
@@ -92,7 +93,7 @@ export default () => {
                         </div>
                     </article>
                 </section>
-                <section className="pt-5">
+                <section className="py-5">
                     <hr />
                     <section className="text-center py-2" id="free-course">
                         <article className="py-5">
@@ -189,81 +190,102 @@ export default () => {
                         </article>
                         <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
-                                Cursos de ##
+                                Cursos de linguagens
                             </h1>
                             <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="EnglishBay"
+                                    link_course="https://www.youtube.com/@EnglishBay/videos"
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_nph66qnIp5J0CLA-tCaDmOgsBVo_Lws8tsuAks2A=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Academia de Libras"
+                                    link_course="https://www.youtube.com/@AcademiadeLibras/videos"
+                                    img_course="https://yt3.googleusercontent.com/4yq3DKOthIItZ0nKz7rcG5n73vbRmDHdS95wPfBiA8-GazRiJod7odimEgK_VdAp_uJ30TxJhQw=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Irmão Alemão"
+                                    link_course="https://www.youtube.com/@IrmaoAlemao/videos"
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kRV7Vapm8U_20DrzvA1V7cGDuYxW8-UCcwyiLA=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Flavia Penereiro"
+                                    link_course="https://www.youtube.com/@FlaviaPenereiro/videos"
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_kWmTF4d35xOy1ksvGYKih68OQaYk5h_Nu3S2gfnQ=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Vem a mim língua russa"
+                                    link_course="https://www.youtube.com/@vemamimlinguarussa"
+                                    img_course="https://yt3.googleusercontent.com/ZzjnUMH3Jaj4ZdmueYDM46qR-ZGehECAxhZx1lWPRDY5BUptsWKGIBiZrV-iZXx0e2vMtFYAM5c=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Programa Japonês Online"
+                                    link_course="https://www.youtube.com/@aulasjapones"
+                                    img_course="https://yt3.googleusercontent.com/00zNmHXJGSc7q1jKrNdW2oRO-wCd5GECDMV7p5QEBqdxpUu2663Y0J1-LhDPQgpjTX-i05zyAg=s176-c-k-c0x00ffffff-no-rj"
                                 />
                             </div>
                         </article>
                         <article className="py-5">
                             <h1 className="display-4 fw-bold color-primary">
-                                Cursos de ##
+                                Cursos de Tecnicos
                             </h1>
                             <div className="rounded p-2 row d-flex justify-content-center">
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Conhecimento Aplicado - Automotivo"
+                                    link_course="https://www.youtube.com/@ConhecimentoAplicado"
+                                    img_course="https://yt3.googleusercontent.com/vLE4fZLYgolCl-zP0NQ_D_gKh94lClSvvy5TY6UVGxz3vFQXGOZcqF_-FK1PpsdUw5E96lZETA=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="
+                                    Dicas Flash - Cortes Engehall"
+                                    link_course="https://www.youtube.com/@dicasflash-cortesengehall7488"
+                                    img_course="https://yt3.googleusercontent.com/ytc/AIdro_nRyyTmVJ62HcR_yFwsqJHoXqjifZZED7c4DkoM=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Reinaldo Lisa"
+                                    link_course="https://www.youtube.com/@reinaldolisa4711"
+                                    img_course="https://yt3.googleusercontent.com/9rlWRJBt0NHcohgMXcgRwtDrhynahSfaN_54HOLy6sTHC17d05qJrAtt6-M10zVgKyJKnbHi6No=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Professor Eduardo Moreira"
+                                    link_course="https://www.youtube.com/@ProfessorEduardoMoreira"
+                                    img_course="https://yt3.googleusercontent.com/l_Pk-A55bkvT1zXt8mSaoPimyLaNbTW_OhTQW6plkvI37U1JkjL3iJKFiwJnm0PgioOB-OocoQ=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="AgroBrasil"
+                                    link_course="https://www.youtube.com/@AgroBrasil"
+                                    img_course="https://yt3.googleusercontent.com/LgmP8DPnlg8ifewkhpRpQh0LZUf8NBBsZ_VrCv5bHJMLh0XiqcJTnxiQDv9bwN2ss_wY-diq=s176-c-k-c0x00ffffff-no-rj"
                                 />
                                 <CoursesPage
-                                    course_name="course"
-                                    link_course={"#"}
-                                    img_course=""
+                                    course_name="Chef Du Gastronomia"
+                                    link_course="https://www.youtube.com/@chefdugastronomia8197/videos"
+                                    img_course="https://yt3.googleusercontent.com/hQFqxADzrvf0UlCZ7DsdHg825NOBBZ7tGMOfa6rRWSjlmtxmYqm7Ja0lXvWGtnhfzSvjcoNcM5I=s176-c-k-c0x00ffffff-no-rj"
                                 />
                             </div>
                         </article>
                     </section>
                 </section>
-                <div id="city-courses">cursos iati</div>
+                <section className="pt-5">
+                    <aside className="row">
+                        <div className="col-md-7">
+                            <img
+                                className="img-fluid"
+                                src={CityImg}
+                                alt="img-city"
+                            />
+                        </div>
+                        <div className="col-md-4">
+                            <h1 className="display-4">
+                                Agora em nossa cidade
+                                <span className="text-body-secondary">
+                                    {" "}
+                                    Iati-pe
+                                </span>
+                            </h1>
+                        </div>
+                    </aside>
+                    <article id="city-courses">conteudo</article>
+                </section>
                 <div id="recomendation">Recomendações</div>
             </main>
         </>
