@@ -284,7 +284,52 @@ export default () => {
                             </h1>
                         </div>
                     </aside>
-                    <article id="city-courses">conteudo</article>
+                    <hr />
+                    <article className="row mt-5" id="city-courses">
+                        <div className="col-md-3">
+                            <div>
+                                <h3>PRINT INFORMÁTICA CURSOS</h3>
+                            </div>
+                            <div>
+                                <iframe
+                                    className="ratio"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.101802340633!2d-36.84602623047547!3d-9.045183936221415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b1600ccd53f5%3A0xd2ad6e20e7712a35!2sPRINT%20INFORM%C3%81TICA%20CURSOS!5e0!3m2!1spt-BR!2sbr!4v1710278330493!5m2!1spt-BR!2sbr"
+                                    height="350"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                                <span>Local praticado</span>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div>
+                                <h3>NAME COURSE</h3>
+                            </div>
+                            <div>
+                                <img src="" alt="iframe" />
+                                <span>Local praticado</span>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div>
+                                <h3>NAME COURSE</h3>
+                            </div>
+                            <div>
+                                <img src="" alt="iframe" />
+                                <span>Local praticado</span>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div>
+                                <h3>NAME COURSE</h3>
+                            </div>
+                            <div>
+                                <img src="" alt="iframe" />
+                                <span>Local praticado</span>
+                            </div>
+                        </div>
+                    </article>
                 </section>
                 <div id="recomendation">Recomendações</div>
             </main>
