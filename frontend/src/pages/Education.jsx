@@ -304,34 +304,58 @@ export default () => {
                         </div>
                         <div className="col-md-3">
                             <div>
-                                <h3>NAME COURSE</h3>
+                                <h3>INTEL MAX TREINAMENTOS</h3>
                             </div>
                             <div>
-                                <img src="" alt="iframe" />
+                                <iframe
+                                    className="ratio"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.400455358298!2d-36.8592020064209!3d-9.045492399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b10da5f84fcb%3A0x69221967fb31306f!2sINTELMAX%20TREINAMENTOS%20E%20SERVI%C3%87OS!5e0!3m2!1spt-BR!2sbr!4v1710364239668!5m2!1spt-BR!2sbr"
+                                    height="350"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                                 <span>Local praticado</span>
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div>
-                                <h3>NAME COURSE</h3>
+                                <h3>GALERIA DIVERSOS CURSOS DISPONIVEIS</h3>
                             </div>
                             <div>
-                                <img src="" alt="iframe" />
+                                <iframe
+                                    className="ratio"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.5361420406373!2d-36.84708814719745!3d-9.045199433056764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b15fe715b145%3A0xb01653eeeddae075!2sAv.%20Fab%20Manoel%20Tenorio%20Alves%2C%20186%20-%20Centro%2C%20Iati%20-%20PE%2C%2055345-000!5e0!3m2!1spt-BR!2sbr!4v1710364453544!5m2!1spt-BR!2sbr"
+                                    height="350"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                                 <span>Local praticado</span>
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div>
-                                <h3>NAME COURSE</h3>
+                                <h3>UNICESUMAR SUPERIOR IATI-PE</h3>
                             </div>
                             <div>
-                                <img src="" alt="iframe" />
+                                <iframe
+                                    className="ratio"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2198349218006!2d-36.851605921983705!3d-9.043701280081097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x707b19bb53f2433%3A0x506422f8a0219fe!2sUniCesumar%20Iati!5e0!3m2!1spt-BR!2sbr!4v1710364714657!5m2!1spt-BR!2sbr"
+                                    height="350"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
                                 <span>Local praticado</span>
                             </div>
                         </div>
                     </article>
                 </section>
-                <div id="recomendation">Recomendações</div>
+                <div id="recomendation">
+                    <div>Recomendações e palavras finais</div>
+                    <div>img</div>
+                </div>
             </main>
         </>
     );
