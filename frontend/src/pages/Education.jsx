@@ -299,7 +299,6 @@ export default () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                                <span>Local praticado</span>
                             </div>
                         </div>
                         <div className="col-md-3">
@@ -315,7 +314,6 @@ export default () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                                <span>Local praticado</span>
                             </div>
                         </div>
                         <div className="col-md-3">
@@ -331,7 +329,6 @@ export default () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                                <span>Local praticado</span>
                             </div>
                         </div>
                         <div className="col-md-3">
@@ -347,14 +344,34 @@ export default () => {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                                <span>Local praticado</span>
                             </div>
                         </div>
                     </article>
                 </section>
-                <div id="recomendation">
-                    <div>Recomendações e palavras finais</div>
-                    <div>img</div>
+                <div className="row pt-5" id="recomendation">
+                    <div className="col-md-6">
+                        <h2 className="display-4 fw-bold">
+                            Recomendações e palavras finais
+                            <span>👋</span>
+                        </h2>
+                        <p className="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Possimus enim delectus, numquam iste
+                            asperiores cum suscipit reprehenderit quis ex
+                            temporibus autem tenetur consequatur necessitatibus
+                            alias provident facere aperiam officiis sed!
+                        </p>
+                    </div>
+                    <div className="col-md-6">
+                        <img src="" alt="img" />
+                    </div>
+                    <p className="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Delectus, nisi. Nobis accusamus illo rem
+                        molestias, aperiam, ab sunt repudiandae voluptates
+                        cupiditate nesciunt veritatis modi adipisci in nulla
+                        mollitia temporibus. At?
+                    </p>
                 </div>
             </main>
         </>
