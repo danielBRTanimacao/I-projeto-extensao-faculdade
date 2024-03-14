@@ -5,6 +5,7 @@ import CursoEmVideoImg from "../assets/svgs/thumbs/CursoEmVideo.svg";
 import JoaoRibeiro from "../assets/svgs/thumbs/JoaoRibeiro.svg";
 import DevDojo from "../assets/svgs/thumbs/DevDoja.svg";
 import CityImg from "../assets/imgs/iati.jpg";
+import Completed from "../assets/svgs/completed.svg";
 
 export default () => {
     return (
@@ -363,7 +364,12 @@ export default () => {
                         </p>
                     </div>
                     <div className="col-md-6">
-                        <img src="" alt="img" />
+                        <img
+                            className="img-fluid"
+                            width={400}
+                            src={Completed}
+                            alt="img"
+                        />
                     </div>
                     <p className="lead">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
