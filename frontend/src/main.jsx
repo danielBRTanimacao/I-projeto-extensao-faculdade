@@ -8,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    // mudar isso depois
-    <React.StrictMode>
+    <>
         <App />
-    </React.StrictMode>
+    </>
 );

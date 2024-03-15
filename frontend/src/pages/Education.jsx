@@ -356,11 +356,13 @@ export default () => {
                             <span>👋</span>
                         </h2>
                         <p className="lead">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Possimus enim delectus, numquam iste
-                            asperiores cum suscipit reprehenderit quis ex
-                            temporibus autem tenetur consequatur necessitatibus
-                            alias provident facere aperiam officiis sed!
+                            Obrigado por ler o artigo eu realmente aprecio que
+                            você tenha tomado o tempo para ler o artigo. Espero
+                            que você tenha encontrado as informações, cursos
+                            úteis e interessantes. Se você tiver alguma dúvida
+                            ou comentário, fique à vontade para comentar no
+                            repositorio que esta no github. Obrigado novamente
+                            por ler!
                         </p>
                     </div>
                     <div className="col-md-6">
@@ -371,12 +373,55 @@ export default () => {
                             alt="img"
                         />
                     </div>
+                    <h4>Recomendações de cursos</h4>
                     <p className="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Delectus, nisi. Nobis accusamus illo rem
-                        molestias, aperiam, ab sunt repudiandae voluptates
-                        cupiditate nesciunt veritatis modi adipisci in nulla
-                        mollitia temporibus. At?
+                        Os cursos são uma ótima maneira de aprender novas
+                        habilidades e se manter atualizado com as últimas
+                        tendências. Existem muitos cursos disponíveis, por isso
+                        pode ser difícil decidir quais são os melhores para
+                        você. Aqui estão algumas dicas para escolher os cursos
+                        certos: Depois de escolher alguns cursos, é hora de se
+                        inscrever. A maioria dos cursos online é paga, mas
+                        alguns são gratuitos. Verifique o site do curso para
+                        obter mais informações sobre os custos e as datas de
+                        início.
+                    </p>
+                    <ul className="lead">
+                        <li>
+                            Pense no que você quer aprender. Quais são suas
+                            metas profissionais? Quais são seus interesses
+                            pessoais?
+                        </li>
+                        <li>
+                            Pesquise os cursos disponíveis. Existem muitos sites
+                            que oferecem cursos online, como Coursera, Udacity e
+                            edX. Leia as descrições dos cursos e veja quais
+                            parecem ser os mais adequados para você.
+                        </li>
+                        <li>
+                            Leia as avaliações dos alunos. Os alunos geralmente
+                            deixam avaliações dos cursos que fizeram. Isso pode
+                            ser útil para saber o que os outros pensam sobre o
+                            curso e se ele é adequado para você.
+                        </li>
+                        <li>
+                            Fale com seu orientador ou professor. Eles podem ter
+                            algumas recomendações de cursos que podem ser úteis
+                            para você.
+                        </li>
+                    </ul>
+                    <p className="lead">
+                        Uma vez que você se inscreveu no curso, é hora de
+                        começar a estudar! A maioria dos cursos online tem um
+                        cronograma de aulas, mas você pode estudar no seu
+                        próprio ritmo. Faça os exercícios e tarefas, e participe
+                        das discussões online. Se você tiver alguma dúvida, não
+                        hesite em entrar em contato com o professor ou o
+                        assistente do curso. Os cursos online podem ser uma
+                        ótima maneira de aprender novas habilidades e se manter
+                        atualizado com as últimas tendências. Com um pouco de
+                        pesquisa e planejamento, você pode encontrar os cursos
+                        certos para você e começar a aprender hoje mesmo.
                     </p>
                 </div>
             </main>
